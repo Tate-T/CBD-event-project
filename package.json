@@ -1,11 +1,11 @@
 {
-    "name": "BOSE",
+    "name": "CBD-event",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/BOSE/",
+    "build": "vite build --base=/CBD-event/",
     "preview": "vite preview"
     },
     "devDependencies": {
