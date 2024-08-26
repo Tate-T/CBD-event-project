@@ -1,9 +1,7 @@
 .header{
+    background-color: $footer-color;
     padding-top: 10px;
 
-    &__containre{
-        display: flex;
-    }
     &__main{
         margin-left: 84px;
     }
