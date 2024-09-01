@@ -1,0 +1,63 @@
+.reviews {
+  padding: 108px 0 48px;
+  background: #979797;
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--white-fon, #f8f1e9);
+
+    /* h2 */
+    font-family: "Montserrat Alternates";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 114.286% */
+  }
+
+  &__item {
+    display: flex;
+    width: 886px;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--white-text, #fdfdfd);
+    background: var(--white-fon, #f8f1e9);
+  }
+
+  &__item:nth-child(2){
+    margin-left: 474px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  &__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    color: var(--black-text, #3d3c39);
+
+    /* main text */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+  }
+
+  &__name {
+    color: var(--blue-information, #3e1063);
+
+    /* menu bttn */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 122.222% */
+  }
+}
