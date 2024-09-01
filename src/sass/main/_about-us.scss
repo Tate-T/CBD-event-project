@@ -1,0 +1,118 @@
+.about{
+    height: 367px;
+    padding-top: 80px;
+    padding-bottom: 48px;
+
+    &__box{
+        display: flex;
+        gap: 20px;
+    }
+
+    &__container{
+        display: flex;
+        gap: 5px;
+
+    }
+
+    &__first{
+        display: flex;
+        flex-direction:column;
+align-items: flex-start;
+    }
+
+    &__first:nth-child(3){
+        align-items: flex-end;
+    }
+    &__second{
+        width: 339px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 38px;
+        align-items: end;
+    }
+
+    &__picture{
+        width: 210px;
+height: 210px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 2px solid $second-title-color;
+background:  lightgray 50% / cover no-repeat;
+
+
+    }
+    &__title{
+        margin-bottom: 18px;
+        color: $title-color;
+        font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px;
+    }
+    
+    &__text{
+        display: flex;
+height: 97px;
+align-items: center;
+flex-direction: row;
+justify-content: center;
+gap: 20px;
+    }
+
+    &__text::before{
+        content: "";
+width: 95px;
+height: 2px;
+background: $title-color;
+    }
+
+    &__more{
+        font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+color: $button-color;
+
+margin-left: 546px;
+
+display: flex;
+max-height: 42px;
+width: 240px;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+border: none;
+border-bottom: 1px solid $text-color;
+background: $background-color;
+    }
+
+    &__coute{
+        color: $name-color;
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; 
+    }
+
+    &__chat{
+        background-color: $background-color;
+        width: 240px;
+padding: 10px 43px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+border: 1px solid $text-color;
+
+
+color: $button-color;
+/* menu bttn */
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; 
+    }
+}
