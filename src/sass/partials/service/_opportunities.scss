@@ -1,75 +1,88 @@
 .opportunities {
-    padding-top: 110px;
-    padding-bottom: 49px;
+  padding-top: 110px;
+  padding-bottom: 49px;
 
-    &__title {
-        margin-bottom: 52px;
-        color: var(--gold-text, #A76E00);
-      
-      /* h2 */
-      font-family: "Montserrat Alternates";
-      font-size: 56px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 64px; /* 114.286% */
-      }
-      
-      &__text {
-        margin-bottom: 23px;
-        width: 668px;
-        color: var(--black-text, #3D3C39);
-      
-      /* main text */
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px; /* 160% */
-      }
-      
-      &__button{
-        border-radius: 4px;
-      border: 1px solid var(--gold-logo, #DA9D27);
-      background: var(--white-text, #FDFDFD);
-      display: flex;
-      width: 240px;
-      padding: 10px 8px;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      color: var(--gold-text, #A76E00);
-      
-      /* menu bttn */
-      font-family: Montserrat;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 22px; /* 122.222% */
-      }
-      
-      &__buttone{
-        border-radius: 4px;
-      border-bottom: 1px solid var(--black-text, #3D3C39);
-      background: var(--white-text, #FDFDFD);
-      display: flex;
-      width: 240px;
-      padding: 10px 16px;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      color: var(--green-text, #04867E);
-      
-      /* menu bttn */
-      font-family: Montserrat;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 22px; /* 122.222% */
-      }
-      
-      &__box {
-        display: flex;
-        justify-content: space-between;
-      }
+  &__title {
+    margin-bottom: 52px;
+    color: var(--gold-text, #a76e00);
+
+    /* h2 */
+    font-family: "Montserrat Alternates";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 114.286% */
   }
 
+  &__boxe {
+    display: flex;
+    height: 448px;
+    gap: 138px;
+    margin-bottom: 23px;
+  }
+
+  &__photo {
+    width: 554px;
+    height: 411px;
+    margin-top: 28px;
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    margin-bottom: 23px;
+    width: 668px;
+    color: var(--black-text, #3d3c39);
+
+    /* main text */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+  }
+
+  &__button {
+    border-radius: 4px;
+    border: 1px solid var(--gold-logo, #da9d27);
+    background: var(--white-text, #fdfdfd);
+    display: flex;
+    width: 240px;
+    padding: 10px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--gold-text, #a76e00);
+
+    /* menu bttn */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 122.222% */
+  }
+
+  &__buttone {
+    border-radius: 4px;
+    border-bottom: 1px solid var(--black-text, #3d3c39);
+    background: var(--white-text, #fdfdfd);
+    display: flex;
+    width: 240px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--green-text, #04867e);
+
+    /* menu bttn */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 122.222% */
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
