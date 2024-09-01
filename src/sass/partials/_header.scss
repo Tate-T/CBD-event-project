@@ -57,10 +57,12 @@ margin-left: 8px;
         gap: 8px;
     }
     &__icon{
+        fill: $background-color;
         width: 24px;
         height: 24px;
     }
     &__icon-button{
+        background-color: rgba(255, 255, 255, 0);;
         width: 24px;
 height: 24px;
 border: solid 1px $text-color;
