@@ -1,0 +1,92 @@
+.basement{
+    background-color: $footer-color;
+    position: relative;
+
+    &__container{
+        padding-top: 64px;
+    }
+    
+    &__list{
+        width: 256px;
+    }
+
+    &__text{
+        color: $second-text-color;
+        font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+    }
+
+    &__text-container{
+        display: flex;
+        width: 1070px;
+        margin-left: auto;
+        gap: 8px;
+    }
+
+    &__item:nth-child(1){
+        margin-bottom: 12px;
+    }
+
+    &__item:nth-child(2){
+        display: flex;
+            gap: 8px;
+        flex-direction: column;
+    }
+
+    &__item:nth-child(3){
+        margin-top: 48px;
+    }
+
+     &__title, .basement__link, .basement__redesign, .basement__link-container{
+        color: $second-text-color;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+    }
+
+    &__icon{
+        width: 23.998px;
+height: 23.845px;
+    }
+
+    &__number, .basement__email{
+     color: $background-color;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 18px;
+    }
+
+    &__button{
+        padding: 10px 8px;
+        color: $title-color;
+        border-radius: 4px;
+        border: 1px solid $logo-color;
+        font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+    }
+    
+    &__logo{
+        position: absolute;
+    }
+
+    &__cods{
+        width: 440px;
+        position: absolute;
+        top:364px;
+    }
+
+    &__redesign{
+        margin-left: 570px;
+    }
+
+    &__link-text-container{
+        display: flex;
+        margin-top: 127px;
+    }
+}
