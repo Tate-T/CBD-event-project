@@ -1,18 +1,29 @@
 <section class="about">
-    <div class="container about__box">
-        <div class="about__picture">
-        <img src="" alt="вечірка" >
+  <div class="container about__box">
+    <picture class="about__picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ../../img/desktop/about-us-img@desktop-1x.jpg 1x,
+          ../../img/desktop/about-us-img@desktop-2x.jpg 2x
+        "
+      />
+      <img src="././img/desktop/about-us-img@desktop-1x.jpg" alt="вечірка" />
+    </picture>
+    <div class="about__container">
+      <div class="about__first">
+        <h1 class="about__title">Про компанію</h1>
+        <p class="about__text">
+          CBD Meetings & Events — готове рішення Вашингтона, округ Колумбія до
+          повного планування заходів, організації заходів та маркетингу заходів.
+          CBD є найкращим інтегрованим планува...
+        </p>
+        <button class="about__more">Детальніше</button>
+      </div>
+      <div class="about__second">
+        <p class="about__coute">Натхнення можна знайти всюди</p>
+        <button class="about__chat">Чат</button>
+      </div>
     </div>
-        <div class="about__container">
-            <div class="about__first">
-                <h1 class="about__title">Про компанію</h1>
-                <p class="about__text">CBD Meetings & Events — готове рішення Вашингтона, округ Колумбія до повного планування заходів, організації заходів та маркетингу заходів. CBD є найкращим інтегрованим планува...</p>
-                <button class="about__more">Детальніше</button>
-            </div>
-            <div class="about__second">
-                <p class="about__coute">Натхнення можна знайти всюди</p>
-                <button class="about__chat">Чат</button>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>
