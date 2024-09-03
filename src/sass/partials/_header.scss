@@ -1,9 +1,19 @@
 .header{
-    background-color: $footer-color;
     padding-top: 10px;
 
     &__main{
         margin-left: 84px;
+        display: block;
+        width: 1106px;
+    }
+    &__logo{
+        margin-top: 44px;
+        color: $logo-color;
+        font-family: Nunito;
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: 80px; 
     }
     &__link-list{
         display: flex;
@@ -32,6 +42,9 @@ line-height: 22px;
 margin-right: 8px;
 
     }
+    &__second{
+        justify-content: flex-end;
+    }
     &__form-second{
         color: $title-color;
 font-size: 18px;
@@ -46,6 +59,7 @@ margin-left: 8px;
     &__first{
         display: flex;
         gap: 131px;
+        justify-content: flex-end;
         margin-bottom: 19px;
     }
 &__first-containre{
@@ -90,7 +104,7 @@ line-height: 22px;
     
     &__input{
         max-width: 127px;
-        background-color: $footer-color;
+        background: transparent;
         width: 100%;
         display: inline-flex;
 height: 40px;
@@ -118,5 +132,10 @@ border: 1px solid $second-text-color;
         width: 18.707px;
 height: 18.708px;
 flex-shrink: 0;
+    }
+
+    &__containre{
+        display: flex;
+        justify-content: flex-end;
     }
 }
