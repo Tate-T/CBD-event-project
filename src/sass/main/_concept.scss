@@ -18,9 +18,10 @@ gap: 40px;
     }
     &__title::before{
         content: "";
-        color: $title-color;
+        background-color: $title-color;
         width: 433px;
 height: 2px;
+display: block;
 
 
     }
@@ -37,6 +38,9 @@ left: 158px;
 
     }
     &__second{
+        width: 720px;
+height: 360px;
+flex-shrink: 0;
         border-radius: 8px;
 border: 2px solid $second-title-color;
 position: absolute;
@@ -85,4 +89,8 @@ left: 40px;
     transition: opacity 250ms cubic-bezier(0.83, -0.08, 0.32, 1);
 
   }
+
+//   &__img{
+//     border: none;
+//   }
 }

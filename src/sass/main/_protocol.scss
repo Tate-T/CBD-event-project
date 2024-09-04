@@ -3,7 +3,8 @@
     height: 775px;
   background-image: url(../../img/main/main_background_protocol-1x.png),
     linear-gradient(#979797, #979797);
-  background-position: center, center;
+  background-position-x: center, center;
+  background-position-y: 75%, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 1288px, 1440px;
 
@@ -12,7 +13,6 @@
   }
 
   &__title {
-    font-family: "Montserrat", "Alternates";
     font-size: 56px;
     font-style: normal;
     font-weight: 500;
@@ -22,14 +22,17 @@
 
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
   }
 
   &__title::after{
     content: "";
-    display: block;
     width: 384px;
 height: 2px;
-color: $background-color;
+background: $background-color;
+display: block;
 
   }
 
