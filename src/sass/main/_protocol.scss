@@ -1,0 +1,79 @@
+.protocol {
+    padding-top: 108px;
+    height: 775px;
+  background-image: url(../../img/main/main_background_protocol-1x.png),
+    linear-gradient(#979797, #979797);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1288px, 1440px;
+
+  &__first {
+    display: flex;
+  }
+
+  &__title {
+    font-family: "Montserrat", "Alternates";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    color: $background-color;
+    margin-bottom: 48px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__title::after{
+    content: "";
+    display: block;
+    width: 384px;
+height: 2px;
+color: $background-color;
+
+  }
+
+  &__list{
+    display: flex;
+width: 1360px;
+align-items: center;
+gap: 20px;
+  }
+
+  &__name{
+    color:$title-color;
+    margin-bottom: 12px;
+
+/* h3 */
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 128.571% */
+  }
+
+  &__text{
+    color: $text-color;
+
+/* main text */
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+  }
+
+  &__card{
+    display: flex;
+width: 324px;
+height: 440px;
+padding: 8px 8px 8px 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+flex-shrink: 0;
+
+background: #F8F1E9;
+border: 1px solid $background-color;
+border-radius: 8px;
+  }
+}
