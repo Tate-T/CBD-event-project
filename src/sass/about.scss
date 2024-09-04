@@ -1,8 +1,9 @@
-@import 'base/reset';
-@import 'base/common';
-@import 'utilites/colors';
-@import 'utilites/placeholders';
-@import 'utilites/mixins';
-@import 'partials/header';
-@import 'partials/about-us/hero';
-@import 'partials/footer';
+@import './base/reset';
+@import './base/common';
+@import './utilites/colors';
+@import './utilites/placeholders';
+@import './utilites/mixins';
+@import './partials/header';
+@import './partials/about-us/hero';
+@import './partials/about-us/why';
+@import './partials/footer';
