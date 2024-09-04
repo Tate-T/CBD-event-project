@@ -6,6 +6,11 @@
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 1288px, 1440px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../../img/main/main_background_protocol-2x.png),
+        linear-gradient(#979797, #979797);  }
 
   &__first {
     display: flex;
