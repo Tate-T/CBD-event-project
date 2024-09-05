@@ -16,10 +16,11 @@
     
     <title>CBD-search</title>
     <script type="module" crossorigin src="/CBD-event/assets/index-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/CBD-event/assets/main-e65689a6.css">
+    <link rel="stylesheet" href="/CBD-event/assets/search-2b5ed0ec.css">
   </head>
 
   <body>
+    <div class="search-bacround">
     <section class="header">
   <div class="container header__containre">
     <a class="header__logo" href="./index.html">CBD</a>
@@ -86,7 +87,7 @@
             <a href="" class="header__anchor">Клієнти</a>
           </li>
           <li class="header__anchor-item">
-            <a href="" class="header__anchor">Магазин</a>
+            <a href="./search.html" class="header__anchor">Магазин</a>
           </li>
           <li class="header__anchor-item">
             <a href="" class="header__anchor">Контакти</a>
@@ -110,62 +111,69 @@
 </section>
 
     <section class="hero">
-    <div class="hero__container">
+    <div class="container hero__container">
         <h1 class="hero__title">Результати пошуку</h1>
     </div>
 </section>
+  </div>
     <section class="search">
-  <div class="search__container">
+  <div class="container">
+    <div class="search__containerbig">
     <ul class="search__listphoto">
       <li class="search__iteamphoto">
-        <img src="" alt="" class="search__photo" />
+        <img src="../../img/holiday.webp" alt="holiday" class="search__photofirst" />
       </li>
       <li class="search__iteamphoto">
-        <img src="" alt="" class="search__photo" />
+        <img src="../../img/feast.webp" alt="feast" class="search__phototwo" />
       </li>
       <li class="search__iteamphoto">
-        <img src="" alt="" class="search__photo" />
+        <img src="../../img/pie.webp" alt="pie" class="search__phototree" />
       </li>
     </ul>
+    <div class="search__containerdata">
     <h3 class="search__subtitle">Архів</h3>
     <ul class="search__listext">
       <li class="search__subiteamdate">
-        <p class="search__date">Серпень 2019</p>
+        <p class="search__date">Серпень <span class="search__datespan">2019</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Травень 2019</p>
+        <p class="search__date">Травень <span class="search__datespan">2019</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Січень 2015</p>
+        <p class="search__date">Січень <span class="search__datespan">2015</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Вересень 2014</p>
+        <p class="search__date">Вересень <span class="search__datespan">2014</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Грудень 2013</p>
+        <p class="search__date">Грудень <span class="search__datespan">2013</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Грудень 2012</p>
+        <p class="search__date">Грудень <span class="search__datespan">2012</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Листопад 2012</p>
+        <p class="search__date">Листопад <span class="search__datespan">2012</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Березень 2012</p>
+        <p class="search__date">Березень <span class="search__datespan">2012</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Січень 2012</p>
+        <p class="search__date">Січень <span class="search__datespan">2012</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Листопад 2011</p>
+        <p class="search__date">Листопад <span class="search__datespan">2011</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Квітень 2011</p>
+        <p class="search__date">Квітень <span class="search__datespan">2011</span></p>
       </li>
       <li class="search__subiteamdate">
-        <p class="search__date">Березень 2011</p>
+        <p class="search__date">Березень <span class="search__datespan">2011</span></p>
       </li>
     </ul>
+  </div>
+</div>
+<div class="search__containercalendar">
+    <div class="search__container">
     <ul class="search__list">
       <li class="search__iteam">
         <h2 class="search__title">Світські заходи, вечірки тощо.</h2>
@@ -184,7 +192,7 @@
         <button type="button" class="search__button">Детальніше</button>
       </li>
       <li class="search__iteam">
-        <h2 class="search__title">Формула по прийому на роботу</h2>
+        <h2 class="search__bigtitle">Формула по прийому на роботу</h2>
         <h3 class="search__minititle">21 Серпня 2011</h3>
         <p class="search__text">
           Організатор заходів із повним набором послуг хтось найняти...
@@ -192,11 +200,13 @@
         <button type="button" class="search__button">Детальніше</button>
       </li>
     </ul>
+  </div>
+  <div class="search__bigcontainer">
     <h3 class="search__calendar">Календар</h3>
-    <table>
-      <caption class="search__bigtitle">
-        Жовтень 2022
-      </caption>
+    <h3 class="search__titlecalendar">
+      Жовтень 2022
+    </h3>
+    <table class="search__table">
       <caption class="search__minitext">Лис «</caption>
       <thead>
         <th class="search__thth">Пн</th>
@@ -265,6 +275,8 @@
       </tbody>
       <caption class="search__minitextver">Вер «</caption>
     </table>
+  </div>
+  </div>
   </div>
 </section>
 
