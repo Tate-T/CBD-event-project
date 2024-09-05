@@ -3,6 +3,10 @@ body{
     font-family: "Montserrat", sans-serif;
     transition: 250ms opacity cubic-bezier(.17,.67,.79,.77);
 }
+h1,
+h2{
+  font-family: "Montserrat Alternates";
+}
 
 .container {
     max-width: 343px;

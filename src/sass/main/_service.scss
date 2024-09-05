@@ -34,7 +34,6 @@ margin-bottom: 24px;
 }
 
       &__first-card{
-        width: 628px;
         height: 256px;
 
         display: flex;
@@ -46,11 +45,9 @@ gap: 8px;
 border-radius: 8px;
 background: $second-title-color;
 
-padding: 0 12px;
       }
       &__second-card{
-        width: 625px;
-        height: 256px;
+
 
         display: flex;
 padding: 12px 0px;
@@ -61,7 +58,6 @@ gap: 8px;
 border-radius: 8px;
 background: $second-title-color;
 
-padding: 0 12px;
       }
 
       &__cards{
@@ -77,6 +73,9 @@ font-size: 28px;
 font-style: normal;
 font-weight: 500;
 line-height: 36px; /* 128.571% */
+display: flex;
+justify-content: center;
+align-items: center;
 
       }
 
@@ -108,13 +107,12 @@ line-height: 22px; /* 122.222% */
 
   }
 
-
+&__text-first{
+    padding-left: 8px;
+}
 
 
   &__text-second{
-    display: flex;
-    justify-content: center;
-align-items: center;
     gap: 20px;
   }
   &__text-second::before{
@@ -126,9 +124,6 @@ background-color: $title-color;
   }
 
   &__text-third{
-    display: flex;
-    justify-content: center;
-align-items: center;
     gap: 24px;
   }
   &__text-third::before{
@@ -138,5 +133,54 @@ align-items: center;
     height: 2px;
 background-color: $title-color;
   }
-    
+
+  &__text-fourth{
+    gap: 23px;
+  }
+  &__text-fourth::before{
+    content: "";
+    display: block;
+    width: 264px;
+    height: 2px;
+background-color: $title-color;
+  }
+
+  &__items-first{
+    gap: 8px;
+  }
+
+  &__items-first::after{
+    content: "";
+    display: block;
+    width: 440px;
+    height: 2px;
+background-color: $title-color;
+}
+
+&__items-second{
+    gap: 8px;
+  }
+
+  &__items-second::after{
+    content: "";
+    display: block;
+    width: 382px;
+    height: 2px;
+background-color: $title-color;}
+
+&__items-third{
+    gap: 8px;
+  }
+
+  &__items-third::after{
+    content: "";
+    display: block;
+    width: 98px;
+    height: 2px;
+background-color: $title-color;}
+
+
+&__items-fourth{
+    padding-right: 8px;
+}
 }
