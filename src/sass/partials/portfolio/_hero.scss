@@ -1,0 +1,14 @@
+.hero {
+    padding-top: 88px;
+    padding-bottom: 240px;
+    
+  &__title {
+    color:$background-color;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; 
+    text-align: center;
+    text-wrap: nowrap;
+  }
+}
