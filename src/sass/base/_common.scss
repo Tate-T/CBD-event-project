@@ -1,18 +1,30 @@
-body{
-    background-color: #FDFDFD;
-    font-family: "Montserrat Alternates", sans-serif;
-    transition: 250ms opacity cubic-bezier(.17,.67,.79,.77);
+body {
+  background-color: #fdfdfd;
+  font-family: "Montserrat Alternates", sans-serif;
+  transition: 250ms opacity cubic-bezier(0.17, 0.67, 0.79, 0.77);
 }
 
 .container {
-    max-width: 343px;
-    width: 100%;
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-      max-width: 704px;
-    }
-    @media screen and (min-width: 1440px) {
-      max-width: 1360px;
-    }
-
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 343px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
   }
+  @media screen and (min-width: 1200px) {
+    max-width: 1360px;
+  }
+}
+
+.porfolio-bacround {
+  background-image: linear-gradient(rgb(16, 16, 16, 0.8), rgb(16, 16, 16, 0.8)),
+    url(../../img/porfolio-bacround.webp);
+}
+
+.search-bacround {
+  background-image: linear-gradient(rgb(16, 16, 16, 0.8), rgb(16, 16, 16, 0.8)),
+    url(../../img/search-bacround.webp);
+}
