@@ -3,6 +3,10 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   transition: 250ms opacity cubic-bezier(0.17, 0.67, 0.79, 0.77);
 }
+h1,
+h2{
+  font-family: "Montserrat Alternates";
+}
 
 .container {
   padding-left: 10px;
