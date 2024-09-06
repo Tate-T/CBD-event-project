@@ -1,5 +1,6 @@
 <section class="price">
-  <div class="container">
+  <div class="container price__container">
+    <div class="price__leftcontainer">
     <h1 class="price__maintitle">Заповніть таблицю</h1>
     <p class="price__information">* обов'язкові для заповнення поля</p>
     <form action="">
@@ -63,76 +64,96 @@
           <input type="text" required class="price__emptyinput" />
         </li>
       </ul>
+      <div class="price__containerposition">
       <label for="" class="price__label">Бюджет*</label>
       <ul class="price__numericlist">
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">1000-2500</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">2501-3500</button>
         </li>
+      </div>
+      <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">3501-5000</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">5001-10000</button>
         </li>
+      </div>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">10000+</button>
         </li>
       </ul>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Дата заходу*</label>
       <button type="button" class="price__numericbuton">mm/dd/yyyy</button>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Час дня*</label>
       <ul class="price__timelist">
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">
+          <button type="button" class="price__bigtext">
             Сніданок, зустріч до полудня
           </button>
         </li>
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">Обід</button>
+          <button type="button" class="price__bigtext">Обід</button>
         </li>
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">Вечеря</button>
+          <button type="button" class="price__bigtext">Вечеря</button>
         </li>
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">Не відомо</button>
+          <button type="button" class="price__bigtext">Не відомо</button>
         </li>
       </ul>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Кількість гостей</label>
       <ul class="price__guestslist">
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">0-50</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">50-100</button>
         </li>
+      </div>
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">100-150</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">150-200</button>
         </li>
+      </div>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">200+</button>
         </li>
       </ul>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Це тематичний захід*</label>
       <ul class="price__questionlist">
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">Так</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">Ні</button>
         </li>
-        <li class="price__bignumericiteam">
-          <button type="button" class="price__numericbuton">
+      </div>
+        <li class="price__bignumericiteam price__bigiteam">
+          <button type="button" class="price__bignumericbuton">
             Що таке тематичний захід?
           </button>
         </li>
       </ul>
-      <p class="price__informationtext">
+    </div>
+      <p class="price__informationtext price__infa">
         Зустрічі та спеціальні заходи CBD 450 Massachusetts Ave, NW Вашингтон,
         округ Колумбія 20001
       </p>
@@ -185,6 +206,8 @@
         </li>
       </ul>
       <button type="submit" class="price__button">Надіслати</button>
+    </div>
+    <div class="price__rigtcontainer">
     </form>
     <p class="price__textrequest">
       Якщо ви знаєте, який тип події хотіли б, надішліть запит на пропозицію.
@@ -392,5 +415,6 @@
       <h3 class="price__titlcode">Введіть код:*</h3>
       <input type="text" class="price__inputcode">
     </form>
+  </div>
   </div>
 </section>
