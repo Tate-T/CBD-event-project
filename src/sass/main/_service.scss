@@ -5,7 +5,7 @@
         linear-gradient(#979797, #979797);
       background-position: center, center;
       background-repeat: no-repeat, no-repeat;
-      background-size: 1288px, 1440px;
+      background-size: 1288px, auto;
       @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -21,7 +21,7 @@ line-height: 64px;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 40px;
+gap: 36px;
 margin-bottom: 24px;
       }
 
@@ -44,7 +44,6 @@ align-items: flex-start;
 gap: 8px;
 border-radius: 8px;
 background: $second-title-color;
-
       }
       &__second-card{
 
@@ -69,7 +68,7 @@ background: $second-title-color;
 
       p{
         color: $text-color;
-font-size: 28px;
+font-size: 26px;
 font-style: normal;
 font-weight: 500;
 line-height: 36px; /* 128.571% */

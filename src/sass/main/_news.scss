@@ -1,0 +1,80 @@
+.news{
+    padding-top: 108px;
+    padding-bottom: 200px;
+
+    &__title{
+        color: $title-color;
+        font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px; 
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 36px;
+    }
+
+    &__title::before{
+        content: "";
+        display: block;
+        width: 798px;
+height: 2px;
+background-color: $title-color;
+    }
+
+    &__list{
+        margin: 24px 0;
+        display: inline-flex;
+        align-items: flex-start;;
+        gap: 23px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+    &__text{
+        color: $name-color;
+
+/* menu bttn */
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 122.222% */
+    }
+
+    &__sub-title{
+        color: $logo-color;
+
+/* h3 */
+font-family: Montserrat;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 128.571% */
+    }
+
+    &__button{
+        display: flex;
+width: 240px;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+margin: 0 auto;
+
+border-radius: 4px;
+border: none;
+border-bottom: 1px solid $text-color;
+
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 122.222% */
+    }
+}
