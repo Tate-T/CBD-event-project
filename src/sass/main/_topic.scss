@@ -1,0 +1,95 @@
+.topic{
+    height: 762px;
+    padding-top: 108px;
+    padding-bottom: 48px;
+
+
+    &__title-first{
+        font-family: "Montserrat Alternates";
+        color: $title-color;
+        font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px; /* 114.286% */
+    }
+
+    &__title-second{
+        font-family: "Montserrat Alternates";
+        display: flex;
+        color: $title-color;
+        font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px; /* 114.286% */
+justify-content: flex-end;
+margin-bottom: 40px;
+    }
+
+    &__name{
+        font-family: Montserrat;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; 
+color: $logo-color;
+margin-bottom: 32px;
+    }
+
+    &__text{
+        color: $text-color;
+        font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+}
+
+&__special{
+    color: $text-color;
+    font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+}
+
+  &__conainer{
+    width: 537px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 32px;
+    }
+
+    &__button{
+        color: $button-color;
+        background-color: $background-color;
+
+        font-family: Montserrat;
+        display: flex;
+width: 240px;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border: none;
+
+border-radius: 4px;
+border-bottom: 1px solid $text-color;
+    }
+
+    &__box{
+        display: flex;
+        gap:89px;
+    }
+
+    &__picture{
+        width: 670px;
+height: 420px;
+flex-shrink: 0;
+
+border-radius: 8px;
+border: 2px solid $second-title-color;
+
+    }
+}
