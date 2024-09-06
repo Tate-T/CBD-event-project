@@ -1,0 +1,43 @@
+.decisions{
+    &__container{
+        display: flex;
+    }
+
+    &__text-container{
+        &:first-of-type{
+            width: 734px;
+        }
+    }
+
+    &__title{
+        font-family: "Montserrat Alternates";
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px;
+color: $title-color;
+margin-bottom: 128px;
+    }
+
+    &__text{
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+color: $text-color; 
+    }
+
+    &__list{
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    &__link{
+        font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px;
+color:$logo-color;
+    }
+}
