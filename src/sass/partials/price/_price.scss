@@ -247,4 +247,134 @@
     font-weight: 700;
     line-height: 22px;
   }
+
+  &__textrequest {
+    color: $name-color;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 72px;
+  }
+
+  &__image {
+    width: 554px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  &__brochurebuton {
+    width: 240px;
+    padding: 10px 8px;
+    color: $title-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    border-radius: 4px;
+    border: 1px solid #da9d27;
+    background: none;
+    margin-left: 315px;
+    margin-bottom: 36px;
+  }
+
+  &__listrespond {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  &__rigtwrap {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__chekbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #3d3c39;
+    border-radius: 0;
+    display: block;
+  }
+
+  &__buttonrespond {
+    display: flex;
+    width: 268px;
+    height: 42px;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border-radius: 4px;
+    color: $text-color;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid #3d3c39;
+  }
+
+  &__bigbuttonrespond {
+    text-align: start;
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+  }
+
+  &__bigminitext {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 198px;
+  }
+
+  &__textplace {
+    color: $text-color;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 48px;
+  }
+
+  &__placeinput {
+    display: flex;
+    width: 554px;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #3d3c39;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__codecontainer {
+    display: flex;
+    gap: 44px;
+  }
+
+  &__titlcode {
+    color: $text-color;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+  }
+
+  &__inputcode {
+    width: 180px;
+    height: 72px;
+    border-radius: 4px;
+    border: 1px solid #3d3c39;
+  }
 }
