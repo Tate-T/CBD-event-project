@@ -29,10 +29,13 @@ margin-bottom: 80px;
             width: 765px;
 height: 2px;
 background-color: $title-color;
-display: block;
 position: absolute;
 left: 635px;
-top: 72px
+top: 72px;
+display:none;
+@media screen and (min-width:1440px){
+    display:block;
+}
         }
     }
 
