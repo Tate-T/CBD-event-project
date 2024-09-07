@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build --base=/CBD-event/",
+        "build": "vite build --base=/CBD-event-project/",
         "preview": "vite preview"
     },
     "devDependencies": {
