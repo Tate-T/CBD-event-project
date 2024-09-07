@@ -4,14 +4,15 @@
 @import 'utilites/placeholders';
 @import 'utilites/mixins';
 @import 'partials/header';
-@import 'main/hero';
-@import 'main/about-us';
-@import 'main/protocol';
-@import 'main/concept';
-@import 'main/service';
-@import 'main/topic';
-@import 'main/video';
-@import 'main/news';
+@import 'partials/footer';
+// @import 'main/hero';
+// @import 'main/about-us';
+// @import 'main/protocol';
+// @import 'main/concept';
+// @import 'main/service';
+// @import 'main/topic';
+// @import 'main/video';
+// @import 'main/news';
 
 .main_backgroung{
     background-image:  linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/desktop/hero-background@desktop-1x.jpg);

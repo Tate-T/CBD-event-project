@@ -1,19 +1,40 @@
 .header{
     padding-top: 10px;
+      @media screen and (max-width: 767.9px) {
+        background: $background-color;
+      }
+      @media screen and (max-width: 374.9px) {
+        padding-bottom: 10px;
+      }
+      
+      
 
     &__main{
+        @media screen and (min-width: 1200px) {
         margin-left: 84px;
         display: block;
         width: 1106px;
     }
+        
+        
+    }
     &__logo{
-        margin-top: 44px;
         color: $logo-color;
+        display: flex;
+// padding: 10px 15.333px 10px 16px;
+font-family: Nunito;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 48px; 
+@media screen and (min-width: 1200px) {
+        margin-top: 44px;
         font-family: Nunito;
 font-size: 64px;
 font-style: normal;
 font-weight: 800;
 line-height: 80px; 
+}
     }
     &__link-list{
         display: flex;
@@ -35,36 +56,90 @@ line-height: 18px; /* 112.5% */
     }
     &__form-first{
         color: $title-color;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px;
+@media screen and (min-width: 1200px) {
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 22px;
 margin-right: 8px;
+}
+}
 
-    }
+&__line{
+    color: $title-color;
+    font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px;
+margin: auto 5px;
+    @media screen and (min-width: 1200px) {
+        display: none;
+}
+}
+
+  
     &__second{
+        display: none;
+        @media screen and (min-width: 768px) {
+          }
+        @media screen and (min-width: 1200px) {
         justify-content: flex-end;
+        }
     }
     &__form-second{
         color: $title-color;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 22px;
-margin-left: 8px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        margin-right: 8px;
+        }
     }
     &__form-item-extra{
+        border: none;
+        @media screen and (min-width: 1200px) {
         border-left: 2.3px solid $title-color;
+        }
     }
     &__first{
         display: flex;
-        gap: 131px;
+        
         justify-content: flex-end;
         margin-bottom: 19px;
+        @media screen and (min-width: 1200px) {
+            gap: 131px;
+        }
     }
 &__first-containre{
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 128px;
+      }
+}
+
+
+&__icon-menu{
     display: flex;
-    gap: 128px;
+padding: 10px 7px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+fill: $logo-color;
+@media screen and (min-width: 1200px) {
+    display: none;
+    }
 }
     &__icon-list{
         display: flex;
@@ -136,6 +211,9 @@ flex-shrink: 0;
 
     &__containre{
         display: flex;
-        justify-content: flex-end;
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-end;
+            }
+
     }
 }
