@@ -1,4 +1,8 @@
 .decisions{
+    position: relative;
+    padding-top: 108px;
+    padding-bottom: 48px;
+
     &__container{
         display: flex;
     }
@@ -9,6 +13,10 @@
         }
     }
 
+    &__link-container{
+        padding-top: 176px;
+    }
+
     &__title{
         font-family: "Montserrat Alternates";
 font-size: 56px;
@@ -17,6 +25,18 @@ font-weight: 500;
 line-height: 64px;
 color: $title-color;
 margin-bottom: 128px;
+
+
+&:after{
+    position: absolute;
+width: 570px;
+content: '';
+display: block;
+background-color: $title-color;
+height: 2px;
+left: 830px;
+top: 172px;
+}
     }
 
     &__text{
@@ -31,6 +51,9 @@ color: $text-color;
         display: flex;
         gap: 32px;
         flex-direction: column;
+        &:last-of-type{
+            gap: 16px;
+        }
     }
 
     &__link{
@@ -39,5 +62,10 @@ font-style: normal;
 font-weight: 500;
 line-height: 36px;
 color:$logo-color;
+    }
+
+    &__image{
+        margin-top: 24px;
+        display: block;
     }
 }
