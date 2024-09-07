@@ -1,5 +1,6 @@
 <section class="price">
-  <div class="container">
+  <div class="container price__container">
+    <div class="price__leftcontainer">
     <h1 class="price__maintitle">Заповніть таблицю</h1>
     <p class="price__information">* обов'язкові для заповнення поля</p>
     <form action="">
@@ -63,76 +64,96 @@
           <input type="text" required class="price__emptyinput" />
         </li>
       </ul>
+      <div class="price__containerposition">
       <label for="" class="price__label">Бюджет*</label>
       <ul class="price__numericlist">
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">1000-2500</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">2501-3500</button>
         </li>
+      </div>
+      <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">3501-5000</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">5001-10000</button>
         </li>
+      </div>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">10000+</button>
         </li>
       </ul>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Дата заходу*</label>
       <button type="button" class="price__numericbuton">mm/dd/yyyy</button>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Час дня*</label>
       <ul class="price__timelist">
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">
+          <button type="button" class="price__bigtext">
             Сніданок, зустріч до полудня
           </button>
         </li>
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">Обід</button>
+          <button type="button" class="price__bigtext">Обід</button>
         </li>
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">Вечеря</button>
+          <button type="button" class="price__bigtext">Вечеря</button>
         </li>
         <li class="price__timeiteam">
-          <button type="button" class="price__numericbuton">Не відомо</button>
+          <button type="button" class="price__bigtext">Не відомо</button>
         </li>
       </ul>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Кількість гостей</label>
       <ul class="price__guestslist">
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">0-50</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">50-100</button>
         </li>
+      </div>
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">100-150</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">150-200</button>
         </li>
+      </div>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">200+</button>
         </li>
       </ul>
+    </div>
+    <div class="price__containerposition">
       <label for="" class="price__label">Це тематичний захід*</label>
       <ul class="price__questionlist">
+        <div class="price__wrapcontainer">
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">Так</button>
         </li>
         <li class="price__numericiteam">
           <button type="button" class="price__numericbuton">Ні</button>
         </li>
-        <li class="price__bignumericiteam">
-          <button type="button" class="price__numericbuton">
+      </div>
+        <li class="price__bignumericiteam price__bigiteam">
+          <button type="button" class="price__bignumericbuton">
             Що таке тематичний захід?
           </button>
         </li>
       </ul>
-      <p class="price__informationtext">
+    </div>
+      <p class="price__informationtext price__infa">
         Зустрічі та спеціальні заходи CBD 450 Massachusetts Ave, NW Вашингтон,
         округ Колумбія 20001
       </p>
@@ -185,6 +206,8 @@
         </li>
       </ul>
       <button type="submit" class="price__button">Надіслати</button>
+    </div>
+    <div class="price__rigtcontainer">
     </form>
     <p class="price__textrequest">
       Якщо ви знаєте, який тип події хотіли б, надішліть запит на пропозицію.
@@ -194,8 +217,9 @@
       Загрузити брошуру
     </button>
     <form action="">
-      <label for="">Тип заходу*</label>
+      <label for="" class="price__label">Тип заходу*</label>
       <ul class="price__listrespond">
+        <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">Вечірка</button>
         </li>
@@ -204,6 +228,8 @@
             Корпоративний захід
           </button>
         </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
             Вечерній захід
@@ -214,6 +240,8 @@
             Збір коштів
           </button>
         </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">Рецепція</button>
         </li>
@@ -222,6 +250,8 @@
             Маркетинг стилю життя
           </button>
         </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
             Святкова вечірка
@@ -232,6 +262,8 @@
             Політичний захід
           </button>
         </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
             Ювілейне святкування
@@ -240,147 +272,147 @@
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">Інше</button>
         </li>
+      </div>
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">Весілля</button>
         </li>
       </ul>
-      <label for="">Вимоги до логістики*</label>
+      <label for="" class="price__label">Вимоги до логістики*</label>
       <ul class="price__listrespond">
+        <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Аудіовізуал
+            Аудіовізуал <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Звук</button>
-          <input class="price__chekbox" type="checkbox" />
+          <button type="button" class="price__buttonrespond">Звук <input class="price__chekbox" type="checkbox" /></button>
         </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Відеозйомка
+            Відеозйомка <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond price__bigbuttonrespond">
+            <p class="price__bigminitext">Освітлення заходів</p> <input class="price__chekbox" type="checkbox" />
+          </button>
+        </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Освітлення заходів(Кольорове освітлення)
+            Реєстраційний штат <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">Фотозйомка  <input class="price__chekbox" type="checkbox" /></button>
+        </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Реєстраційний штат
+            Послуги планування  <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Фотозйомка</button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">
-            Послуги планування
+          <button type="button" class="price__buttonrespond price__bigbuttonrespond">
+            <p class="price__bigminitext">Мені не потрібні жодні з цих послуг </p><input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">
-            Мені не потрібні жодні з цих послуг
-          </button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
+      </div>
       </ul>
-      <label for="">Необхідне обладнання*</label>
+      <label for="" class="price__label">Необхідне обладнання*</label>
       <ul class="price__listrespond">
+        <div class="price__rigtwrap">
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Ноутбук</button>
-          <input class="price__chekbox" type="checkbox" />
+          <button type="button" class="price__buttonrespond">Ноутбук  <input class="price__chekbox" type="checkbox" /></button>
         </li>
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Доступ в інтернет
+            Доступ в інтернет  <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
+        </li>
+      </div>
+      <div class="price__rigtwrap">
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">
+            Запис відео  <input class="price__chekbox" type="checkbox" />
+          </button>
+        </li>
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">Мікрофон  <input class="price__chekbox" type="checkbox" /></button>
+        </li>
+      </div>
+        <div class="price__rigtwrap">
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">
+            Накладні мікрофони  <input class="price__chekbox" type="checkbox" />
+          </button>
         </li>
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Запис відео
+            ПодіумПодіум  <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
+        </li>
+      </div>
+        <div class="price__rigtwrap">
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">
+            Проекційний екран  <input class="price__chekbox" type="checkbox" />
+          </button>
         </li>
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Мікрофон</button>
-          <input class="price__chekbox" type="checkbox" />
+          <button type="button" class="price__buttonrespond">Проектор  <input class="price__chekbox" type="checkbox" /></button>
+        </li>
+      </div>
+        <div class="price__rigtwrap">
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">Сцена <input class="price__chekbox" type="checkbox" /></button>
         </li>
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Накладні мікрофони
+            Нічого не потрібно <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">
-            ПодіумПодіум
-          </button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">
-            Проекційний екран
-          </button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Проектор</button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Сцена</button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">
-            Нічого не потрібно
-          </button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
+      </div>
       </ul>
-      <label for="">Елементи підтримки реєстрації*</label>
+      <label for="" class="price__label">Елементи підтримки реєстрації*</label>
       <ul class="price__listrespond">
+        <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Власники значків
+            Власники значків <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Шнурки</button>
-          <input class="price__chekbox" type="checkbox" />
+          <button type="button" class="price__buttonrespond">Шнурки  <input class="price__chekbox" type="checkbox" /></button>
         </li>
+      </div>
+      <div class="price__rigtwrap">
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Роздатковий матеріал
+            Роздатковий матеріал <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Плакати</button>
-          <input class="price__chekbox" type="checkbox" />
+          <button type="button" class="price__buttonrespond">Плакати  <input class="price__chekbox" type="checkbox" /></button>
+        </li>
+      </div>
+      <div class="price__rigtwrap">
+        <li class="price__iteamrespond">
+          <button type="button" class="price__buttonrespond">Вивіски  <input class="price__chekbox" type="checkbox" /></button>
         </li>
         <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Вивіски</button>
-          <input class="price__chekbox" type="checkbox" />
+          <button type="button" class="price__buttonrespond">Брошури  <input class="price__chekbox" type="checkbox" /></button>
         </li>
-        <li class="price__iteamrespond">
-          <button type="button" class="price__buttonrespond">Брошури</button>
-          <input class="price__chekbox" type="checkbox" />
-        </li>
+      </div>
         <li class="price__iteamrespond">
           <button type="button" class="price__buttonrespond">
-            Нічого не потрібно
+            Нічого не потрібно <input class="price__chekbox" type="checkbox" />
           </button>
-          <input class="price__chekbox" type="checkbox" />
         </li>
       </ul>
       <p class="price__textplace">
@@ -388,9 +420,12 @@
         потреби в управлінні місцем призначення
       </p>
       <input type="text" class="price__placeinput">
+      <div class="price__codecontainer">
       <img src="./img/price-code.webp" alt="code" class="price__imgcode">
       <h3 class="price__titlcode">Введіть код:*</h3>
       <input type="text" class="price__inputcode">
+    </div>
     </form>
+  </div>
   </div>
 </section>
