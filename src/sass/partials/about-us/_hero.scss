@@ -1,0 +1,27 @@
+.hero{
+    padding-top: 240px;
+    padding-bottom: 154px;
+    background-image:linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/desktop/hero-background@desktop-1x.webp);
+
+    &__container{
+        padding-left: 239px;
+    }
+
+    &__title{
+        font-family: "Montserrat Alternates";
+font-size: 68px;
+font-style: normal;
+font-weight: 500;
+line-height: 90px;
+color: $second-title-color;
+margin-bottom: 32px;
+    }
+
+    &__text{
+        font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px;
+color: $second-text-color;
+    }
+}

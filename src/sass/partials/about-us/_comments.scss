@@ -1,0 +1,61 @@
+.comments{
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+    &__title{
+        font-family: "Montserrat Alternates";
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px;
+color: $title-color;
+text-align: center;
+margin-bottom: 24px;
+    }
+
+    &__text-container{
+        display: flex;
+        gap: 48px;
+
+        &:first-of-type{
+            padding-right: 471px;
+            margin-bottom: 12px;
+        }
+
+        &:last-of-type{
+            padding-left: 457px;
+        }
+    }
+
+    &__text{
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+color: $text-color;
+    }
+
+    &__subtext{
+        font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+color: $name-color;
+margin-top: 24px;
+    }
+
+    &__button{
+        padding: 10px 16px;
+        border-radius: 4px;
+border-bottom: 1px solid $text-color;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 24px;
+width: 240px;
+    }
+}
