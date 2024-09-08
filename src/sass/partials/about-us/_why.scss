@@ -1,52 +1,130 @@
 .why{
     position: relative;
-    padding-top: 70px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 51px;
+    @media screen and (min-width:768px){
+        padding-top: 80px;
+        padding-bottom: 48px;
+    }
+    @media screen and (min-width:1440px){
+        padding-top: 70px;
+        padding-bottom: 48px;
+    }
 
     &__container{
         display: flex;
         gap: 27px;
+        flex-direction: column;
+        @media screen and (min-width:768px){
+            flex-direction: row;
+        }
+        @media screen and (min-width:1440px){
+            flex-direction: row;
+        }
     }
 
     &__text-container{
         &:first-child{
-            width: 539px;
+            width: auto;
+
+            order: 1;
+
+            @media screen and (min-width:768px){
+                padding-top: 80px;
+                width: 251px;
+                order: 0;
+            }
+            @media screen and (min-width:1440px){
+                width: 539px;
+                padding-top: 216px;
+                order: 0;
+            }
         }
         &:last-child{
-            width: 786px;
-            padding-top: 224px;
+            width: auto;
+            padding-top: 96px;
+            @media screen and (min-width:768px){
+                padding-top: 80px;
+                width: 347px;
+            }
+            @media screen and (min-width:1440px){
+                width: 786px;
+                padding-top: 224px;
+            }
+        }
+        @media screen and (min-width:768px){
+   
+        }
+        @media screen and (min-width:1440px){
+           
         }
     }
 
     &__title{
         font-family: "Montserrat Alternates";
-font-size: 56px;
+        font-size: 30px;
 font-style: normal;
 font-weight: 500;
-line-height: 64px;
+line-height: 40px;
 color:$title-color;
-margin-bottom: 80px;
+text-align: left;
+position: absolute;
+top: 32px;
+    left: 16px;
+@media screen and (min-width:768px){
+    text-align: right;
+    top: 80px;
+    left: 98px;
+    line-height: 48px;
+    font-size: 40px;
+}
+@media screen and (min-width:1440px){
+    text-align: left;
+    top: 70px;
+    left: 40px;
+    width: 539px;
+    line-height: 64px;
+    font-size: 56px;
+}
         &::after{
             content: '';
-            width: 765px;
+            width: 285px;
 height: 2px;
 background-color: $title-color;
 position: absolute;
-left: 635px;
-top: 120px;
-display:none;
+left: 10px;
+top: 312px;
+@media screen and (min-width:768px){
+    width: 2px;
+    height: 444px;
+    left: 197px;
+top: 88px;
+}
 @media screen and (min-width:1440px){
-    display:block;
+    width: 765px;
+height: 2px;
+left: 635px;
+top: 70px;
 }
         }
     }
 
     &__link{
-font-size: 28px;
+        font-size: 14px;
 font-style: normal;
-font-weight: 500;
-line-height: 36px;
+font-weight: 700;
+line-height: 18px; 
 color:$logo-color;
+@media screen and (min-width:768px){
+    font-size: 16px;
+    font-weight: 700;
+line-height: 18px;
+}
+@media screen and (min-width:1440px){
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 28px;
+}
     }
 
     &__button{
@@ -59,21 +137,63 @@ font-style: normal;
 font-weight: 700;
 line-height: 22px;
 color: $title-color;
-margin-top: 120px;
+margin-top: 16px;
+width: 100%;
+@media screen and (min-width:768px){
+    margin-top: 24px;
+    width: auto;
+}
+@media screen and (min-width:1440px){
+    margin-top: 120px;
+    width: auto;
+}
     }
 
     &__text{
-        font-size: 20px;
+        font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 32px;
+line-height: 24px;
 color:$text-color;
+display: -webkit-box;
+width: 327px;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 5;
+overflow: hidden;
+text-overflow: ellipsis;
+@media screen and (min-width:768px){
+    font-size: 14px;
+    line-height: 18px; 
+    -webkit-box-orient: none;
+-webkit-line-clamp: none;
+overflow: none;
+text-overflow: none;
+display: block;
+width: auto;
+}
+@media screen and (min-width:1440px){
+    line-height: 32px;
+    font-size: 20px;
+    -webkit-box-orient: none;
+-webkit-line-clamp: none;
+overflow: none;
+text-overflow: none;
+display: block;
+width: auto;
+}
     }  
 
     &__list{
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media screen and (min-width:768px){
+   
+        }
+        @media screen and (min-width:1440px){
+           
+        }
+
     }
 
     &__button-link{
@@ -85,12 +205,47 @@ font-style: normal;
 font-weight: 700;
 line-height: 22px; 
 color: $button-color;
-background-color: white;
 border-top: none;
 border-left: none;
 border-right: none;
-margin-left: auto;
 display: block;
 margin-top: 32px;
+width: 100%;
+border-bottom: none;
+background-color: $second-title-color;
+@media screen and (min-width:768px){
+    margin-left: auto;
+    width: auto;
+    border-bottom: 1px solid $text-color;
+    background-color: $background-color;
+}
+@media screen and (min-width:1440px){
+    margin-left: auto;
+    width: auto;
+    border-bottom: 1px solid $text-color;
+    background-color: $background-color;
+}
+    }
+
+    &__item{
+        
+        .why__text-container:last-of-type &:nth-child(2){
+            display: none;
+            @media screen and (min-width:768px){
+                display: block;
+            }
+            @media screen and (min-width:1440px){
+                display: block;
+            }
+        }
+        .why__text-container:last-of-type &:nth-child(3){
+            display: none;
+            @media screen and (min-width:768px){
+                display: block;
+            }
+            @media screen and (min-width:1440px){
+                display: block;
+            }
+        }
     }
 }
