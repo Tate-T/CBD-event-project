@@ -1,0 +1,75 @@
+.cos{
+    background-color: $second-text-color;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 48px;
+
+    &__container{
+        background-image: url(../../../img/desktop/choose-of-service-background@desktop-1x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__title{
+        font-family: "Montserrat Alternates";
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px;
+color: $second-title-color;
+text-align: right;
+margin-bottom: 24px;
+
+        &:before{
+            width: 896px;
+height: 2px;
+background-color: $second-title-color;
+display: block;
+content: '';
+position: absolute;
+top: 140px;
+        }
+    }
+
+    &__images-container{
+        display: flex;
+        gap: 44px;
+
+        &-junior{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+    }
+
+    &__text-container{
+        border: 1x solid $second-title-color;
+        background-color: $background-color;
+        border-radius: 8px;
+        padding: 8px 4px 20px 4px;
+        width: 424px;
+    }
+
+    &__subtitle{
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px;
+color: $logo-color;
+margin-bottom: 16px;
+    }
+
+    &__text{
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+color: $text-color;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

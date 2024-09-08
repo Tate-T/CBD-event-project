@@ -1,0 +1,57 @@
+.work{
+    background-color: $second-text-color;
+    position: relative;
+
+    &__container{
+        background-image: url(../../../img/desktop/good-place-background@desktop-1x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 48px;
+        padding-top: 100px;
+    }
+
+    &__title{
+        text-align: right;
+        font-family: "Montserrat Alternates";
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px;
+color: $second-title-color;
+
+&:before{
+    width: 383px;
+height: 2px;
+background-color: $second-title-color;
+display: block;
+content: '';
+position: absolute;
+top: 130px;
+left: 40px;
+}
+    }
+
+    &__text{
+        font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $name-color;
+    text-align: right;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    }
+
+    &__button{
+        width: 240px;
+padding: 10px 16px;
+border-radius: 4px;
+border-bottom: 1px solid $text-color;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+display: block;
+margin: 0px auto;
+    }
+}

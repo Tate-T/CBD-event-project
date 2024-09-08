@@ -1,5 +1,7 @@
 .why{
     position: relative;
+    padding-top: 70px;
+    padding-bottom: 48px;
 
     &__container{
         display: flex;
@@ -31,7 +33,7 @@ height: 2px;
 background-color: $title-color;
 position: absolute;
 left: 635px;
-top: 72px;
+top: 120px;
 display:none;
 @media screen and (min-width:1440px){
     display:block;
