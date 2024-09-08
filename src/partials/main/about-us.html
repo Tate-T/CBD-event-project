@@ -1,6 +1,6 @@
 <section class="about">
   <div class="container about__box">
-    <picture class="about__picture">
+    <picture>
       <source
         media="(min-width: 1440px)"
         srcset="
@@ -8,19 +8,40 @@
           ././img/desktop/about-us-img@desktop-2x.jpg 2x
         "
       />
-      <img src="././img/desktop/about-us-img@desktop-1x.jpg" alt="вечірка" />
+      <img
+        class="about__picture"
+        src="././img/desktop/about-us-img@desktop-1x.jpg"
+        alt="вечірка"
+      />
     </picture>
     <div class="about__container">
       <div class="about__first">
+        <!-- <div class="about__adaptive-container"> -->
         <h1 class="about__title">Про компанію</h1>
-        <p class="about__text">
-          CBD Meetings & Events — готове рішення Вашингтона, округ Колумбія до
-          повного планування заходів, організації заходів та маркетингу заходів.
-          CBD є найкращим інтегрованим планува...
-        </p>
-        <button class="about__more">Детальніше</button>
+        <!-- </div> -->
+        <div class="about__mobile-box">
+          <div class="about__mobile-container">
+            <div class="about__text-container">
+              <p class="about__text">
+                CBD Meetings & Events — готове рішення Вашингтона, округ
+                Колумбія до повного планування заходів, організації заходів та
+                маркетингу заходів. CBD є найкращим інтегрованим планувальником
+                зустрічей для міжнародної спільноти.
+                <br />
+                Ми з гордістю обслуговуємо 8 країн на 5 континентах. CBD керує
+                подіями для дипломатів, некомерційних організацій, фондів і
+                асоціацій, корпорацій і окремих осіб.
+              </p>
+            </div>
+            <button class="about__more">Детальніше</button>
+          </div>
+          <div class="about__second">
+            <p class="about__coute">Натхнення можна знайти всюди</p>
+            <button class="about__chat">Чат</button>
+          </div>
+        </div>
       </div>
-      <div class="about__second">
+      <div class="about__second-fake">
         <p class="about__coute">Натхнення можна знайти всюди</p>
         <button class="about__chat">Чат</button>
       </div>

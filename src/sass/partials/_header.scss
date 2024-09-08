@@ -10,10 +10,12 @@ flex-shrink: 0;
       @media screen and (max-width: 767.9px) {
         background: $background-color;
         height: 60px;
-        padding: 10px 15.333px 10px 16px;
       }
-      @media screen and (max-width: 374.9px) {
-        padding-bottom: 10px;
+      @media screen and (max-width: 1199.9px) {
+        padding-top: 0%;
+        height: 64px;
+        background: $background-color;
+        
       }
       
       
@@ -39,12 +41,14 @@ font-size: 40px;
 font-style: normal;
 font-weight: 800;
 line-height: 48px; 
+@media screen and (min-width: 768px) {
+font-size: 56px;
+line-height: 64px;
+}
 @media screen and (min-width: 1200px) {
         margin-top: 44px;
         font-family: Nunito;
 font-size: 64px;
-font-style: normal;
-font-weight: 800;
 line-height: 80px; 
 }
     }
@@ -73,10 +77,8 @@ font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: 18px;
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 font-size: 18px;
-font-style: normal;
-font-weight: 700;
 line-height: 22px;
 margin-right: 8px;
 }
@@ -91,6 +93,11 @@ font-weight: 700;
 line-height: 18px;
 margin: auto 5px;
 display: block;
+@media screen and (min-width: 768px) {
+    display: none;
+    font-size: 18px;
+    line-height: 22px;
+    }
     @media screen and (min-width: 1200px) {
         display: none;
 }
@@ -111,16 +118,24 @@ display: block;
         font-style: normal;
         font-weight: 700;
         line-height: 18px;
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin-left: 8px;
+            }
         @media screen and (min-width: 1200px) {
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: 22px;
-        margin-left: 8px;
         }
     }
     &__form-item-extra{
         border-left: none;
+        @media screen and (min-width: 768px) {
+
+            border-left: 2.3px solid $title-color;
+        }
         @media screen and (min-width: 1200px) {
         border-left: 2.3px solid $title-color;
         }
@@ -130,8 +145,13 @@ display: block;
         
         justify-content: flex-end;
         margin-bottom: 19px;
+        @media screen and (min-width: 768px) {
+            gap: 186px;
+            justify-content: center;
+            align-items: center;
+        }
         @media screen and (min-width: 1200px) {
-            // gap: 131px;
+            gap: 131px;
         }
     }
 &__first-containre{
@@ -179,6 +199,12 @@ border: solid 1px $text-color;
     &__form-list{
         padding-top: 20px;
         display: flex;
+        @media screen and (min-width: 768px) {
+            margin-top: 21px;
+            margin-bottom: 21px;
+        }
+
+
     }
 
     &__anchor-list{
@@ -234,6 +260,9 @@ flex-shrink: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (min-width: 768px) {
+            justify-content: space-between;
+    }
         @media screen and (min-width: 1200px) {
             justify-content: flex-end;
             }
@@ -242,5 +271,13 @@ flex-shrink: 0;
                 color: $background-color;
             }
 
+    }
+
+    &__menu-button{
+        width: 48px;
+        height: 47px;
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
     }
 }
