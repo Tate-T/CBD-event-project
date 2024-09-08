@@ -1,13 +1,16 @@
 .header{
+    font-family: Montserrat;
     display: flex;
-height: 60px;
-padding: 10px 15.333px 10px 16px;
+    height: 143px;
+    padding-top: 16px;
 justify-content: center;
 align-items: center;
 gap: 15px;
 flex-shrink: 0;
       @media screen and (max-width: 767.9px) {
         background: $background-color;
+        height: 60px;
+        padding: 10px 15.333px 10px 16px;
       }
       @media screen and (max-width: 374.9px) {
         padding-bottom: 10px;
@@ -16,6 +19,8 @@ flex-shrink: 0;
       
 
     &__main{
+        display: flex;
+        
         @media screen and (min-width: 1200px) {
         margin-left: 84px;
         display: block;
@@ -46,6 +51,7 @@ line-height: 80px;
     &__link-list{
         display: flex;
         gap: 128px;
+        margin-right: 131px;
     }
     &__link{
         color: $title-color;
@@ -84,6 +90,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 18px;
 margin: auto 5px;
+display: block;
     @media screen and (min-width: 1200px) {
         display: none;
 }
@@ -95,7 +102,7 @@ margin: auto 5px;
         @media screen and (min-width: 768px) {
           }
         @media screen and (min-width: 1200px) {
-        justify-content: flex-end;
+            display: flex;
         }
     }
     &__form-second{
@@ -109,11 +116,11 @@ margin: auto 5px;
         font-style: normal;
         font-weight: 700;
         line-height: 22px;
-        margin-right: 8px;
+        margin-left: 8px;
         }
     }
     &__form-item-extra{
-        border: none;
+        border-left: none;
         @media screen and (min-width: 1200px) {
         border-left: 2.3px solid $title-color;
         }
@@ -124,7 +131,7 @@ margin: auto 5px;
         justify-content: flex-end;
         margin-bottom: 19px;
         @media screen and (min-width: 1200px) {
-            gap: 131px;
+            // gap: 131px;
         }
     }
 &__first-containre{
@@ -185,6 +192,7 @@ border: solid 1px $text-color;
 font-style: normal;
 font-weight: 700;
 line-height: 22px;
+font-family: Montserrat;
     }
     &__label{
         position: relative;
@@ -228,6 +236,10 @@ flex-shrink: 0;
         justify-content: center;
         @media screen and (min-width: 1200px) {
             justify-content: flex-end;
+            }
+
+            a:hover{
+                color: $background-color;
             }
 
     }
