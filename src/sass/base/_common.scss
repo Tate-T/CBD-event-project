@@ -1,13 +1,27 @@
 body {
   background-color: #fdfdfd;
   font-family: "Montserrat Alternates", sans-serif;
-  transition: 250ms opacity cubic-bezier(0.17, 0.67, 0.79, 0.77);
 }
 
 button {
   color: #04867E;
   border: none;
   background-color: #FDFDFD;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color;
+}
+
+a {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+svg{
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 button:hover{
@@ -23,13 +37,13 @@ h2 {
 }
 
 .container {
-  padding-left: 10px;
-  padding-right: 10px;
   max-width: 343px;
   width: 100%;
   margin: 0 auto;
   display: block;
   @media screen and (min-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 704px;
   }
   @media screen and (min-width: 1200px) {
