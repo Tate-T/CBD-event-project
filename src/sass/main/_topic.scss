@@ -5,67 +5,124 @@
 
 
     &__title-first{
-        font-family: "Montserrat Alternates";
         color: $title-color;
-        font-size: 56px;
+        font-family: "Montserrat Alternates";
+        font-size: 30px;
 font-style: normal;
 font-weight: 500;
+line-height: 40px;
+border-bottom: solid 1px $title-color;
+@media screen and (min-width: 1200px) {
+
+        font-size: 56px;
 line-height: 64px; /* 114.286% */
+}
     }
 
     &__title-second{
-        font-family: "Montserrat Alternates";
-        display: flex;
         color: $title-color;
-        font-size: 56px;
+        font-family: "Montserrat Alternates";
+        font-size: 30px;
 font-style: normal;
 font-weight: 500;
+line-height: 40px;
+
+display: flex;
+justify-content: flex-end;
+@media screen and (min-width: 1200px) {
+
+        display: flex;
+        font-size: 56px;
 line-height: 64px; /* 114.286% */
 justify-content: flex-end;
 margin-bottom: 40px;
+}
     }
 
     &__name{
+        color: $logo-color;
         font-family: Montserrat;
-font-size: 28px;
+font-size: 16px;
 font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-top: 16px;
+margin-bottom: 16px;
+@media screen and (min-width: 1200px) {
+font-size: 28px;
 font-weight: 500;
 line-height: 36px; 
-color: $logo-color;
 margin-bottom: 32px;
+margin-top: 0px;
+}
     }
 
     &__text{
         color: $text-color;
         font-family: Montserrat;
-font-size: 20px;
+font-size: 12px;
 font-style: normal;
 font-weight: 400;
+line-height: 18px; 
+@media screen and (min-width: 1200px) {
+font-size: 20px;
 line-height: 32px; /* 160% */
+}
 }
 
 &__special{
     color: $text-color;
     font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+@media screen and (min-width: 1200px) { 
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
-line-height: 32px; /* 160% */
+line-height: 32px; /* 160% */}
 }
 
   &__conainer{
+    display: flex;
+    flex-direction: column;
+width: 341px;
+height: 178px;
+padding: 8px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+gap: 25px;
+@media screen and (min-width: 1200px) {
     width: 537px;
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+}
     }
 
     &__button{
+        background: $second-title-color;
+        display: flex;
+width: 343px;
+padding: 12px;
+justify-content: center;
+align-items: flex-end;
+gap: 8px;
         color: $button-color;
-        background-color: $background-color;
-
+        
+        margin-top: 24px;
         font-family: Montserrat;
         display: flex;
+        /* mobile/bbtn */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 128.571% */
+        @media screen and (min-width: 1200px) {
+            background-color: $background-color;
 width: 240px;
 padding: 10px 16px;
 justify-content: center;
@@ -74,21 +131,34 @@ gap: 8px;
 border: none;
 
 border-radius: 4px;
-border-bottom: 1px solid $text-color;
+border-bottom: 1px solid $text-color;}
     }
 
     &__box{
         display: flex;
+        flex-direction: column-reverse;
+        @media screen and (min-width: 1200px) {
         gap:89px;
+        }
     }
 
     &__picture{
+        max-width: 343px;
+max-height: 232px;
+flex-shrink: 0;
+@media screen and (min-width: 1200px) {
         width: 670px;
 height: 420px;
-flex-shrink: 0;
+}
 
 border-radius: 8px;
 border: 2px solid $second-title-color;
 
+    }
+
+    &__text-box{
+        width: 343px;
+        display: flex;
+        justify-content: flex-end;
     }
 }
