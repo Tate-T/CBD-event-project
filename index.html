@@ -24,7 +24,7 @@
     <title>CBD-main</title>
     <script type="module" crossorigin src="/CBD-event-project/assets/modulepreload-polyfill-3cfb730f.js"></script>
     <script type="module" crossorigin src="/CBD-event-project/assets/index-4ed993c7.js"></script>
-    <link rel="stylesheet" href="/CBD-event-project/assets/index-d7f33933.css">
+    <link rel="stylesheet" href="/CBD-event-project/assets/index-5b9cbf99.css">
   </head>
 
   <body>
@@ -378,59 +378,60 @@
   </div>
 </section>
 
-    <!--<section class="video">
+    <section class="video">
   <div class="container">
     <h2 class="video__title">Відео-тур</h2>
     <div class="video__box">
       <p class="video__text">Перегляд виконаних замовлень</p>
-      <picture class="video__picture">
+      <picture>
         <source
-          media="(min-width: 1440px)"
-          srcset="
-            ././img/desktop/video-img@desktop-1x.jpg 1x,
-            ././img/desktop/video-img@desktop-2x.jpg 2x
-          "
+          media="(min-width: 1200px)"
+          srcset="/CBD-event-project/assets/video-img@desktop-1x-14c651d4.jpg 1x, /CBD-event-project/assets/video-img@desktop-2x-d83a9847.jpg 2x"
         />
-        <img src="../../img/desktop/video-img@desktop-1x.jpg" alt="" />
+        <source
+          media="(max-width: 767.99px)"
+          srcset="/CBD-event-project/assets/video-img@mobile-1x-a94d1ac5.png 1x, /CBD-event-project/assets/video-img@mobile-2x-e535b686.png 2x"
+        />
+        <img class="video__picture" src="../../img/desktop/video-img@desktop-1x.jpg" alt="" />
       </picture>
     </div>
     <button class="video__button">Ознайомитися</button>
   </div>
 </section>
--->
-    <!--<section class="news">
-  <div class="container">
+
+    <section class="news">
+  <div class="container news__conainer">
     <h2 class="news__title">Останні новини</h2>
     <ul class="news__list">
       <li class="news__item">
         <p class="news__text">04 Травня 2019</p>
-        <picture class="news__picture">
+        <picture>
           <source  media="(min-width: 1440px)"
           src="news-img1@desktop-1x.jpg 1x, 
                news-img1@desktop-2x.jpg 2x"/>
-          <img src="././img/desktop/news-img1@desktop-1x.jpg" alt="" />
+          <img  class="news__picture" src="/CBD-event-project/assets/news-img1@desktop-1x-f425a3db.jpg" alt="" />
         </picture>
         <h3 class="news__sub-title">Як планується захід</h3>
       </li>
-      <li class="news__item">
+      <li class="news__item-right">
         <p class="news__text">21 Серпня 2019</p>
-        <picture class="news__picture">
+        <picture>
           <source  media="(min-width: 1440px)"
           src="news-img2@desktop-1x.jpg 1x, 
                news-img2@desktop-2x.jpg 2x"/>
-          <img src="././img/desktop/news-img2@desktop-1x.jpg" alt="" />
+          <img  class="news__picture" src="/CBD-event-project/assets/news-img2@desktop-1x-6abcdd61.jpg" alt="" />
         </picture>
         <h3 class="news__sub-title">Інформація для пошуку організатора</h3>
       </li>
       <li class="news__item">
         <p class="news__text">28 Серпня 2019</p>
-        <picture class="news__picture">
+        <picture>
           <source
             media="(min-width: 1440px)"
             src="news-img3@desktop-1x.jpg 1x, 
                  news-img3@desktop-2x.jpg 2x"
           />
-          <img src="././img/desktop/news-img3@desktop-1x.jpg" alt="" />
+          <img  class="news__picture" src="/CBD-event-project/assets/news-img3@desktop-1x-debccedf.jpg" alt="" />
         </picture>
         <h3 class="news__sub-title">Зустрічі та заходи. Брошура</h3>
       </li>
@@ -438,7 +439,177 @@
     <button class="news__button">Ознайомитися</button>
   </div>
 </section>
--->
+
+    <!--<section class="basement">
+  <div class="basement__container container">
+    <div>
+        <picture>
+            <source media="(max-width: 767px)" srcset="../img/desktop/header-logo@desktop-1x.png">
+    <img src="../img/desktop/footer-logo@desktop-1x.png" alt="" class="basement__logo" />
+</picture>
+</div>
+    <ul class="basement__list">
+      <li class="basement__item">
+        <h4 class="basement__title">Про CBD</h4>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+          CBD – головна керуюча компанія для планування заходів для корпорацій,
+          некомерційних організацій, міжнародних урядів та громадських заходів у
+          Вашингтоні.
+        </p>
+      </li>
+      <li class="basement__item">
+        <button type="button" class="basement__button">
+          Загрузити брошуру
+        </button>
+      </li>
+    </ul>
+    <ul class="basement__list">
+      <li class="basement__item">
+        <h4 class="basement__title">Планування заходів</h4>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+            Зустрічі CBD і події
+        </p>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+            Планування заходів
+        </p>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+            Послуги організації
+        </p>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+            Галерея
+        </p>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+            Вартість
+        </p>
+      </li>
+      <li class="basement__item">
+        <p class="basement__text">
+            Прайс
+        </p>
+      </li>
+    </ul>
+    <ul class="basement__list">
+        <li class="basement__item">
+            <h4 class="basement__title">Сервіси для клієнтів</h4>
+          </li>
+        <li class="basement__item">
+            <p class="basement__text">Планування зустрічі</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Планування заходів</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Обслуговування</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Зв'язки з громадськістю</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Маркетинг</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Місце проведення</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Оренда матеріалів</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Аудіовізуал</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Фотографія</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Реєстрація</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Організація заходів</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Звук і освітлення</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Концепція  дизайну</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Менеджмент призначення</p>
+        </li>
+    </ul>
+    <ul class="basement__list">
+        <li class="basement__item">
+            <h4 class="basement__title">Контакти</h4>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">CBD Зустрічі та індивідуальні заходи</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Поштова скринька 76096</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Вашингтон ДС 20013</p>
+        </li>
+        <li class="basement__item">
+            <p class="basement__text">Гаряча лінія</p>
+        </li>
+        <li class="basement__item">
+            <span class="basement__number">+1 800-956-4514</span>
+            <span class="basement__text">код 160</span>
+        </li>
+        <li class="basement__item">
+            <span class="basement__text">Вашингтон ДС</span>
+            <span class="basement__number">+1 202-742-5923</span>
+        </li>
+        <li class="basement__item">
+            <span class="basement__text">Атланта</span>
+            <span class="basement__number">+1 404-806-0153</span>
+        </li>
+        <li class="basement__item">
+            <p class="basement__email">info@cbdmeetings.com</p>
+        </li>
+        <li class="basement__item">
+           <a href="https://www.facebook.com" class="basement__icon-link">
+            <svg class="basement__icon">
+                <use href="../img/symbol-defs.svg#icon-facebook-icon"></use>
+            </svg>
+           </a><a href="https://www.twitter.com" class="basement__icon-link">
+            <svg class="basement__icon">
+                <use href="../img/symbol-defs.svg#icon-witter-icon"></use>
+            </svg>
+           </a><a href="https://www.google.com" class="basement__icon-link">
+            <svg class="basement__icon">
+                <use href="../img/symbol-defs.svg#icon-google-icon"></use>
+            </svg>
+           </a><a href="https://www.youtube.com" class="basement__icon-link">
+            <svg class="basement__icon">
+                <use href="../img/symbol-defs.svg#icon-youtube-icon"></use>
+            </svg>
+           </a>
+        </li>
+    </ul>
+    <div class="basement__cods">
+        <p class="basement__text">NAICS Коди:</p>
+        <p class="basement__text">541820 | 541613 | 611699 | 323111 | 541810 | 541840 | 541850 | 541840 | 541870 |  541890 | 711510 | 511130 | 
+            561990 | 541430 | 541611</p>
+    </div>
+    <div class="basement__text-container">
+        <span class="basement__link-container"><a href="" class="basement__link">Головна</a></span><span class="basement__link-container">|</span><span class="basement__link-container"><a href="" class="basement__link">Продукти</a></span><span class="basement__link-container">|</span><span class="basement__link-container"><a href="" class="basement__link">Кар’єра</a></span><span class="basement__link-container">|</span><span class="basement__link-container"><a href="" class="basement__link">Терміни</a></span>
+        <h2 class="basement__redesign">Редизайн сайту 2022/2023</h2>
+    </div>
+  </div>
+</section>
+ -->
 
     
   </body>
