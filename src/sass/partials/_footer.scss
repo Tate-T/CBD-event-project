@@ -1,8 +1,8 @@
 .basement{
     background-color: $footer-color;
     position: relative;
-    padding-bottom: 180px;
-    padding-top: 72px;
+    padding-bottom: 170px;
+    padding-top: 24px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 510px;
@@ -15,24 +15,31 @@
 
     &__container{
         display: flex;
-        gap: 40px;
+        gap: 16px;
+        flex-wrap: wrap;
+        flex-direction: column;
 
         @media screen and (min-width: 768px) {
             gap: 16px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            display: flex;
         }
         @media screen and (min-width: 1440px) {
             gap: 40px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            display: flex;
         }
         
     }
 
     &__text{
-        font-size: 16px;
+        font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px;
 color: $second-text-color;
-width: 240px;
 
 @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -47,22 +54,25 @@ font-size: 16px;
     }
 
     &__logo{
-        padding-right: 87px;
+        margin-right: auto;
+        padding-bottom: 45px;
 
         @media screen and (min-width: 768px) {
             padding-right: 50px;
+            padding-bottom: 0px;
         }
         @media screen and (min-width: 1440px) {
             padding-right: 87px;
+            padding-bottom: 0px;
         }
     }
 
     &__title{
         font-family: Montserrat;
-font-size: 18px;
+font-size: 14px;
 font-style: normal;
 font-weight: 700;
-line-height: 24px;
+line-height: 18px;
 color: $second-text-color;
 padding-bottom: 4px;
 
@@ -91,7 +101,7 @@ font-family: Montserrat;
     }
 
     &__button{
-        width: 240px;
+        width: 320px;
 padding: 10px 8px;
 border-radius: 4px;
 border: 1px solid $logo-color;
@@ -100,6 +110,16 @@ font-style: normal;
 font-weight: 700;
 line-height: 22px;
 color: $title-color;
+position: absolute;
+top: -50px;
+@media screen and (min-width: 768px) {
+    width: 240px;
+    position: static;
+}
+@media screen and (min-width: 1440px) {
+    width: 240px;
+    position: static;
+}
     }
 
     &__item{
@@ -109,11 +129,23 @@ color: $title-color;
     }
 
     &__number, &__email{
-        font-size: 16px;
+        font-size: 12px;
 font-style: italic;
 font-weight: 400;
 line-height: 18px;
 color:$background-color;
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+}
+@media screen and (min-width: 1440px) {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+}
     }
 
     &__link-container, &__link{
@@ -122,25 +154,28 @@ font-style: normal;
 font-weight: 700;
 line-height: 22px;
 color: $second-text-color;
+display: none;
 @media screen and (min-width: 768px) {
     font-weight: 400;
     font-size: 14px;
 line-height: 18px;
+display: block;
 }
 @media screen and (min-width: 1440px) {
     font-size: 18px;
     font-weight: 700;
-    line-height: 22px
+    line-height: 22px;
+    display: block;
 }
     }
 
     &__redesign{
-        font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: 36px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
 color: $second-text-color;
-margin-left: 554px;
+margin-left: 150px;
 @media screen and (min-width: 768px) {
     margin-left: 174px;
     font-weight: 400;
@@ -159,17 +194,63 @@ line-height: 36px;
         display: flex;
         flex-direction: column;
         gap: 8px;
+        &:nth-child(2){
+            position: absolute;
+            top: 138px;
+            left: 16px;
+            width: 162px;
+        }
+        &:nth-child(5){
+            position: absolute;
+            top: 350px;
+            left: 16px;
+            width: 162px;
+        }
+        &:nth-child(3){
+            padding-left: 181px;
+            width: auto;
+ }
+ &:nth-child(4){
+    padding-left: 181px;
+    width: auto;
+ }
         @media screen and (min-width: 768px) {
             &:nth-child(2){
                 position: absolute;
                 top: 162px;
                 left: 42px;
+                width: 240px;
             }
             &:nth-child(5){
                 position: absolute;
                 top: 470px;
                 left: 42px;
+                width: auto;
             }
+            &:nth-child(3){
+                padding-left: 0px;
+     }
+     &:nth-child(4){
+        padding-left: 0px;
+     }
+        }
+        @media screen and (min-width: 1440px) {
+            &:nth-child(2){
+                position: static;
+                width: 240px;
+                
+            }
+            &:nth-child(5){
+                position: static;
+                width: auto;
+               
+            }
+            &:nth-child(3){
+                padding-left: 0px;
+     }
+     &:nth-child(4){
+        padding-left: 0px;
+     }
         }
     }
 
@@ -178,9 +259,9 @@ line-height: 36px;
     }
 
     &__cods{
-        top:770px;
-        left: 421px;
-        width: 315px;
+        top:800px;
+        left: 16px;
+        width: 251px;
 
         @media screen and (min-width: 768px) {
             top:770px;
@@ -201,7 +282,7 @@ fill: $second-text-color;
     }
 
     &__text-container{
-        top: 576px;
+        top: 904px;
         display: flex;
 
         @media screen and (min-width: 768px) {
