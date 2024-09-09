@@ -15,39 +15,84 @@ margin-bottom: 24px;
 
     &__text-container{
         display: flex;
-        gap: 48px;
+        gap: 16px;
+        @media screen and (min-width:768px) {
+            gap: 16px;
+        }
+        @media screen and (min-width:1440px) {
+            gap: 48px;
+        }
 
         &:first-of-type{
-            padding-right: 471px;
+            padding-right: 95px;
+                margin-bottom: 32px;
+
+            @media screen and (min-width:768px) {
+                padding-right: 188px;
+                margin-bottom: 32px;
+            }
+            @media screen and (min-width:1440px) {
+                padding-right: 471px;
             margin-bottom: 12px;
+            }
         }
 
         &:last-of-type{
-            padding-left: 457px;
+            padding-left: 95px;
+            @media screen and (min-width:768px) {
+                padding-left: 188px;
+            }
+            @media screen and (min-width:1440px) {
+                padding-left: 457px;
+            }
         }
     }
 
     &__text{
-        font-size: 20px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+color: $text-color;
+@media screen and (min-width:768px) {
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+@media screen and (min-width:1440px) {
+    font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 32px;
-color: $text-color;
+}
     }
 
     &__subtext{
-        font-size: 18px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; 
+color: $name-color;
+margin-top: 24px;
+@media screen and (min-width:768px) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+@media screen and (min-width:1440px) {
+    font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 22px;
-color: $name-color;
-margin-top: 24px;
+}
     }
 
     &__button{
         padding: 10px 16px;
         border-radius: 4px;
-border-bottom: 1px solid $text-color;
+border-bottom: none;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -56,6 +101,25 @@ margin-left: auto;
 margin-right: auto;
 display: block;
 margin-top: 24px;
-width: 240px;
+width: 100%;
+background-color: $second-title-color;
+@media screen and (min-width:768px) {
+    width: 240px;   
+    border-bottom: 1px solid $text-color;
+    background-color: #ffffff;     
+}
+@media screen and (min-width:1440px) {
+    width: 240px;
+    border-bottom: 1px solid $text-color;
+    background-color: #ffffff;
+}
     }
+}
+
+
+@media screen and (min-width:768px) {
+                
+}
+@media screen and (min-width:1440px) {
+    
 }
