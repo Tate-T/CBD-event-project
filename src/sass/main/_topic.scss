@@ -1,8 +1,10 @@
 .topic{
     height: 762px;
-    padding-top: 108px;
+    padding-top: 48px;
     padding-bottom: 48px;
-
+    @media screen and (min-width: 1200px) {
+        padding-top: 108px;
+    }
 
     &__title-first{
         color: $title-color;
@@ -12,11 +14,24 @@ font-style: normal;
 font-weight: 500;
 line-height: 40px;
 border-bottom: solid 1px $title-color;
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 768px) {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    border-bottom: none;
         font-size: 56px;
 line-height: 64px; /* 114.286% */
 }
+    }
+    &__title-first::after{
+        content: "";
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            background-color: $title-color;
+            width: 15px;
+            height: 5px;
+        }
     }
 
     &__title-second{
@@ -87,15 +102,12 @@ line-height: 32px; /* 160% */}
   &__conainer{
     display: flex;
     flex-direction: column;
-width: 341px;
-height: 178px;
 padding: 8px;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
 gap: 25px;
 @media screen and (min-width: 1200px) {
-    width: 537px;
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
@@ -139,6 +151,7 @@ border-bottom: 1px solid $text-color;}
         flex-direction: column-reverse;
         @media screen and (min-width: 1200px) {
         gap:89px;
+        flex-direction: row;
         }
     }
 
@@ -147,8 +160,8 @@ border-bottom: 1px solid $text-color;}
 max-height: 232px;
 flex-shrink: 0;
 @media screen and (min-width: 1200px) {
-        width: 670px;
-height: 420px;
+        max-width: 670px;
+max-height: 420px;
 }
 
 border-radius: 8px;
@@ -160,5 +173,8 @@ border: 2px solid $second-title-color;
         width: 343px;
         display: flex;
         justify-content: flex-end;
+        @media screen and (min-width: 1200px) {
+            width: 1344px;
+        }
     }
 }
