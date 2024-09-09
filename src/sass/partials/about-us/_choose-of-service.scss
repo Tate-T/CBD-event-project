@@ -1,62 +1,172 @@
 .cos{
     background-color: $second-text-color;
     position: relative;
+    padding-top: 48px;
+    padding-bottom: 528px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size:400px 600px;
+    @media screen and (min-width: 768px) {
+        background-image: url(../../../img/tablet/service-background@tablet-1x.png);
+        background-size:400px 600px;
+        background-position: 414px 0px;
+        padding-top: 88px;
+        padding-bottom: 48px;
+    }
+    @media screen and (min-width: 1440px) {
+        background-image: url(../../../img/desktop/choose-of-service-background@desktop-1x.png);
+    background-size: 1360px 630px;
+    background-position: 40px 192px;
     padding-top: 100px;
     padding-bottom: 48px;
+    }
 
     &__container{
-        background-image: url(../../../img/desktop/choose-of-service-background@desktop-1x.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding: 0px;
+   
     }
 
     &__title{
         font-family: "Montserrat Alternates";
-font-size: 56px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+color: $second-title-color;
+text-align: right;
+margin-bottom: 0px;
+text-align: left;
+
+@media screen and (min-width: 768px) {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: right;
+    margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+    font-size: 56px;
 font-style: normal;
 font-weight: 500;
 line-height: 64px;
-color: $second-title-color;
 text-align: right;
 margin-bottom: 24px;
+}
 
         &:before{
             width: 896px;
 height: 2px;
 background-color: $second-title-color;
-display: block;
+display: none;
 content: '';
 position: absolute;
 top: 140px;
+@media screen and (min-width: 768px) {
+    display: none;
+}
+@media screen and (min-width: 1440px) {
+    display: block;
+    width: 896px;
+}
         }
     }
 
     &__images-container{
         display: flex;
-        gap: 44px;
+        gap: 8px;
+        flex-wrap: wrap;
+        @media screen and (min-width: 768px) {
+            gap: 16px;
+        }
+        @media screen and (min-width: 1440px) {
+            gap: 44px;
+        }
+        
 
         &-junior{
             display: flex;
-            gap: 30px;
-            flex-direction: column;
+            gap: 8px;
+            flex-direction: row;
+            width: 160px;
+            @media screen and (min-width: 768px) {
+                width: 224px;
+                flex-direction: column;
+                gap: 16px;
+            }
+            @media screen and (min-width: 1440px) {
+                width: 424px;
+                flex-direction: column;
+                gap: 30px;
+            }
         }
     }
 
     &__text-container{
         border: 1x solid $second-title-color;
-        background-color: $background-color;
+        background-color: $second-title-color;
         border-radius: 8px;
-        padding: 8px 4px 20px 4px;
+        padding: 8px 8px;
         width: 424px;
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        .cos__images-container-junior:nth-child(3) &{
+            top: 240px;
+            left: 0px;
+        }
+        .cos__images-container-junior:nth-child(2) &{
+            top: 112px;
+            left: 181px;
+        }
+        .cos__images-container-junior:nth-child(1) &{
+            top: 408px;
+            left: 181px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            padding: 8px 4px 20px 4px;
+            background-color: $background-color;
+            position: static;
+            height: auto;
+            display: block;
+        }
+        @media screen and (min-width: 1440px) {
+            width: 424px;
+            padding: 8px 4px 20px 4px;
+            background-color: $background-color;
+            position: static;
+            height: auto;
+            display: block;
+        }
     }
 
     &__subtitle{
-font-size: 28px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+color: $logo-color;
+margin-bottom: 0px;
+text-align: center;
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+@media screen and (min-width: 1440px) {
+    font-size: 28px;
 font-style: normal;
 font-weight: 500;
 line-height: 36px;
-color: $logo-color;
 margin-bottom: 16px;
+text-align: left;
+}
     }
 
     &__text{
@@ -65,11 +175,62 @@ font-style: normal;
 font-weight: 400;
 line-height: 32px;
 color: $text-color;
+display: none;
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;  
+    display: block;
+}
+@media screen and (min-width: 1440px) {
+    font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+display: block;
+}
     }
 
     &__list{
-        display: flex;
         flex-direction: column;
         gap: 8px;
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+        @media screen and (min-width: 1440px) {
+            display: flex;
+        }
     }
+
+    &__image{
+        position: absolute;
+        .cos__images-container-junior:nth-child(3) &{
+            top: 112px;
+            left: 0px;
+        }
+        .cos__images-container-junior:nth-child(2) &{
+            top: 280px;
+            left: 181px;
+        }
+        .cos__images-container-junior:nth-child(1) &{
+            top: 408px;
+            left: 0px;
+        }
+
+@media screen and (min-width: 768px) {
+           position: static;     
+}
+@media screen and (min-width: 1440px) {
+    position: static;
+}
+    }
+}
+
+@media screen and (min-width: 768px) {
+                
+}
+@media screen and (min-width: 1440px) {
+    
 }
