@@ -1,6 +1,9 @@
 .news{
     padding-top: 40px;
     padding-bottom: 128px;
+    @media screen and (min-width: 768px) {
+
+    }
     @media screen and (min-width: 1200px) {
     padding-top: 108px;
     padding-bottom: 200px;
@@ -47,13 +50,22 @@ background-color: $title-color;
         display: inline-flex;
         flex-direction: column;
         gap: 16px;
+        @media screen and (min-width: 768px) {
+            margin: 24px 0;
+            display: inline-flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: row;
+        }
         @media screen and (min-width: 1200px) {
-        width: auto;
+        max-width: auto;
         margin: 24px 0;
         display: inline-flex;
+        justify-content: center;
+        flex-wrap: nowrap;
         align-items: flex-start;
         flex-direction: row;
-        gap: 23px;
         }
     }
 
@@ -145,6 +157,22 @@ justify-content: center;
 align-items: center;
 gap: 8px;
 flex-shrink: 0;
+@media screen and (min-width:768px) {
+    margin: 0 auto;
+    background-color: $background-color;
+    width: 240px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    gap: 8px;
+    margin: 0 auto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 122.222% */
+border-bottom: 1px solid $text-color;
+}
 @media screen and (min-width: 1200px) {
     background-color: $background-color;
     width: 240px;

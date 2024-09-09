@@ -7,6 +7,20 @@ linear-gradient(#979797, #979797);
 background-position: right, center;
 background-repeat: no-repeat, no-repeat;
 background-size: 250px, auto;
+@media screen and (min-width: 768px) {
+  padding-top: 80px;
+  height: 802px;
+  background-image: url(../../img/main/tablet-bcg-service-1x.png),
+        linear-gradient(#979797, #979797);
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto, auto;
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../../img/main/tablet-bcg-service-2x.png),
+        linear-gradient(#979797, #979797);  }
+}
 @media screen and (min-width: 1200px) {
         padding-top: 108px;
         height: 574px;        
@@ -29,6 +43,14 @@ font-style: normal;
 font-weight: 500;
 line-height: 40px;
 margin-bottom: 16px;
+@media screen and (min-width: 768px) {
+  margin-bottom: 40px;
+  font-family: "Montserrat Alternates";
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px;
+}
         @media screen and (min-width: 1200px) {
         font-size: 56px;
 line-height: 64px; 
@@ -59,7 +81,21 @@ margin-bottom: 24px;
         background: $second-title-color;
         gap: 12px;
         border-bottom: 2px solid $title-color;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
+          display: flex;
+max-width: 604px;
+height: 240px;
+padding: 12px 8px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 8px;
+background: $second-title-color;
+border-bottom: none;
+        }
+        @media screen and (min-width: 768px) {
         height: 256px;
         max-width: 658px;
         display: flex;
@@ -68,9 +104,6 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 gap: 8px;
-border-radius: 8px;
-background: $second-title-color;
-border-bottom: none;
         }
       }
       &__second-card{
@@ -79,6 +112,17 @@ border-bottom: none;
         display: flex;
         flex-direction: column;
         gap: 12px;
+        @media screen and (min-width: 768px) {
+          height: 256px;
+          max-width: 658px;
+          display: flex;
+  padding: 12px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  margin-left: auto;
+        }
         @media screen and (min-width: 1200px) {
           height: 256px;
         display: flex;
@@ -89,6 +133,20 @@ align-items: flex-end;
 gap: 8px;
 border-radius: 8px;
 background: $second-title-color;
+
+        }
+        @media screen and (min-width: 768px) {
+          height: 256px;
+        display: flex;
+padding: 12px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+gap: 8px;
+border-radius: 8px;
+background: $second-title-color;
+          background-color: $second-title-color;
+          margin-bottom: 24px;
         }
 
       }
@@ -98,12 +156,21 @@ background: $second-title-color;
         background-color: $second-title-color;
         padding: 16px;
         border-radius: 8px;
+        @media screen and (min-width: 768px) {
+          padding: 0px;
+          background-color: transparent;
+          display: flex;
+          flex-direction: row;
+          gap: 50px;
+          flex-wrap: wrap;
+        }
         @media screen and (min-width: 1200px) {
-          padding: auto;
+          flex-wrap: nowrap;
           background-color: transparent;
           flex-direction: row;
         display: flex;
-        gap: 50px;
+        justify-content: space-between;
+        // gap: 50px;
         justify-content: center;
         margin-bottom: 24px;
         }
@@ -115,7 +182,17 @@ font-style: normal;
 font-weight: 700;
 line-height: 18px;
         color: $text-color;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
+          font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+        }
+@media screen and (min-width: 1200px) {
 font-size: 26px;
 font-style: normal;
 font-weight: 500;
@@ -128,7 +205,7 @@ align-items: center;
 
       &__button{
         display: none;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
         display: flex;
 width: 240px;
 padding: 10px 16px;
@@ -164,14 +241,14 @@ line-height: 22px; /* 122.222% */
 
   &__text-second{
     margin-left: 15px;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
       margin-left: 0px;
     gap: 20px;
     }
   }
   &__text-second::before{
     display: none;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
     content: "";
     display: block;
     width: 88px;
@@ -181,14 +258,14 @@ background-color: $title-color;}
 
   &__text-third{
     margin-left: 31px;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
       margin-left: 0px;
     gap: 24px;
     }
   }
   &__text-third::before{
     display: none;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
     content: "";
     display: block;
     width: 176px;
@@ -198,14 +275,14 @@ background-color: $title-color;}
 
   &__text-fourth{
     margin-left: 47px;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
       margin-left: 0px;
       gap: 23px;
       }
   }
   &__text-fourth::before{
     display: none;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
     content: "";
     display: block;
     width: 264px;
@@ -219,7 +296,7 @@ background-color: $title-color;}
 
   &__items-first::after{
     display: none;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
     content: "";
     display: block;
     width: 440px;
@@ -230,32 +307,34 @@ background-color: $title-color;
 
 &__items-second{
   margin-left: 16px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: 0px;
     gap: 8px;
   }
+}
 
   &__items-second::after{
     display: none;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
     content: "";
     display: block;
     width: 382px;
     height: 2px;
-background-color: $title-color;}
+background-color: $title-color;
 }
-    }
+}
+    
 
 &__items-third{
   margin-left: 32px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     gap: 8px;
   }
   }
 
   &__items-third::after{
     display: none;
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
     content: "";
     display: block;
     width: 98px;
@@ -266,7 +345,7 @@ background-color: $title-color;}
 
 &__items-fourth{
   margin-left: 48px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: 0px;
     gap: 8px;
   }

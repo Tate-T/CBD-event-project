@@ -11,6 +11,7 @@ background-image:  linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8))
     padding-top: 32px;
 }
 @media screen and (min-width: 1200px) {
+    background: none;
     height: 685px;
     padding-top: 80px;
     flex-shrink: 0;
