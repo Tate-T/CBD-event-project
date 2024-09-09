@@ -7,6 +7,7 @@
     &__container{
         display: flex;
         gap: 40px;
+        flex-wrap: wrap;
     }
 
     &__text{
