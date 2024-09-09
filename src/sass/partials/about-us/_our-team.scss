@@ -2,52 +2,138 @@
   padding-top: 100px;
   padding-bottom: 48px;
   position: relative;
+  @media screen and (min-width:768px) {
+    padding-top: 80px;
+  padding-bottom: 108px;
+  }
+  @media screen and (min-width:1440px) {
+    padding-top: 100px;
+  padding-bottom: 48px;
+  }
   &__title {
     font-family: "Montserrat Alternates";
-    font-size: 56px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+    color: $title-color;
+    text-align: left;
+    @media screen and (min-width:768px) {
+      text-align: right;
+      font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px;
+    }
+    @media screen and (min-width:1440px) {
+      font-size: 56px;
     font-style: normal;
     font-weight: 500;
     line-height: 64px;
-    color: $title-color;
+    text-align: left;
+    }
 
     &:after {
       content: "";
-      display: block;
+      display: none;
       background-color: $title-color;
       height: 2px;
       width: 847px;
       position: absolute;
       top: 140px;
       left: 553px;
+      @media screen and (min-width:768px) {
+        display: none;
+      }
+      @media screen and (min-width:1440px) {
+        display: block;
+      }
     }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 116px;
+    row-gap: 8px;
     margin-top: 124px;
+    @media screen and (min-width:768px) {
+      row-gap: 116px;
+    }
+    @media screen and (min-width:1440px) {
+      row-gap: 116px;
+    }
   }
 
   &__item {
-    
+    display: flex;
+    background-color: $second-title-color;
+    height: 146px;
+    border-radius: 16px;
+    border: 1px solid $second-text-color;
+    padding: 16px 0px 66px 16px;
+    @media screen and (min-width:768px) {
+      display: block;
+      background-color: #ffffff;
+      height: auto;
+      border-radius: 0px;
+      border: none;
+      padding: 0px;
+    }
+    @media screen and (min-width:1440px) {
+      display: block;
+      background-color: #ffffff;
+      height: auto;
+      border-radius: 0px;
+      border: none;
+      padding: 0px;
+    }
 
     &:nth-child(1) {
-      width: 33%;
+      width: 100%;
+      @media screen and (min-width:768px) {
+        width: 33%;
+      }
+      @media screen and (min-width:1440px) {
+        width: 33%;
+      }
     }
     &:nth-child(2) {
-      width: 33%;
+      width: 100%;
+      @media screen and (min-width:768px) {
+        width: 33%;
+      }
+      @media screen and (min-width:1440px) {
+        width: 33%;
+      }
     }
     &:nth-child(3) {
-      width: 33%;
+      width: 100%;
+      @media screen and (min-width:768px) {
+        width: 33%;
+      }
+      @media screen and (min-width:1440px) {
+        width: 33%;
+      }
     }
     &:nth-child(4) {
-      width: 50%;
+      width: 100%;
       margin-top: 16px;
+      @media screen and (min-width:768px) {
+        width: 50%;
+      }
+      @media screen and (min-width:1440px) {
+        width: 50%;
+      }
     }
     &:nth-child(5) {
-      width: 50%;
+      width: 100%;
       margin-top: 16px;
+      @media screen and (min-width:768px) {
+        width: 50%;
+      }
+      @media screen and (min-width:1440px) {
+        width: 50%;
+      }
     }
   }
 
@@ -55,40 +141,146 @@
     border: 1px solid $text-color;
     border-radius: 16px;
     width: 350px;
-height: 318px;
+height: auto;
 margin-left: auto;
 margin-right: auto;
-padding: 74px 16px 22px 16px;
+padding: auto;
+position: static;
+background-color: $second-title-color;
+border: none;
+display: flex;
+flex-direction: column;
+@media screen and (min-width:768px) {
+  position: absolute;
+  width: 240px;
+  height: 272px;
+  padding: 56px 20px 20px 20px;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $text-color;
+}
+@media screen and (min-width:1440px) {
+  position: static;
+  padding: 74px 16px 22px 16px;
+  width: 350px;
+height: auto;
+background-color: #ffffff;
+border: 1px solid $text-color;
+display: block;
+}
+.our-team__item:nth-child(1) &{
+  left: 44px;
+  top: 204px;
+  z-index: 1;
+}
+.our-team__item:nth-child(2) &{
+  left: 164px;
+  top: 204px;
+  z-index: 3;
+}
+.our-team__item:nth-child(3) &{
+  left: 264px;
+  top: 204px;
+  z-index: 5;
+}
+.our-team__item:nth-child(4) &{
+  left: 364px;
+  top: 204px;
+  z-index: 7;
+}
+.our-team__item:nth-child(5) &{
+  left: 464px;
+  top: 204px;
+  z-index: 9;
+}
   }
 
   &__image-container{
     border-radius: 80px;
 border: 1px solid $text-color;
 background: $second-title-color;
-width: 150px;
-height: 150px;
+width: 80px;
+height: 80px;
 display: block;
+padding: 8px;
+position: static;
+@media screen and (min-width:768px) {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  position: absolute;
+}
+@media screen and (min-width:1440px) {
+  width: 150px;
+height: 150px;
 padding: 15px;
 position: absolute;
+}
 .our-team__item:nth-child(1) &{
   left: 194px;
   top: 204px;
+  @media screen and (min-width:768px) {
+    left: 124px;
+  top: 160px;
+  z-index: 2;
+  }
+  @media screen and (min-width:1440px) {
+    left: 194px;
+  top: 204px;
+  }
 }
 .our-team__item:nth-child(2) &{
   left: 665px;
   top: 204px;
+  @media screen and (min-width:768px) {
+    z-index: 4;
+    left: 224px;
+  top: 160px;
+  }
+  @media screen and (min-width:1440px) {
+    left: 665px;
+  top: 204px;
+  }
 }
 .our-team__item:nth-child(3) &{
   left: 1135px;
   top: 204px;
+  @media screen and (min-width:768px) {
+    left: 324px;
+  top: 160px;
+    z-index: 6;
+  }
+  @media screen and (min-width:1440px) {
+    left: 1135px;
+    top: 204px;
+  }
 }
 .our-team__item:nth-child(4) &{
   left: 320px;
-  top: 638px;
+  top: 668px;
+  @media screen and (min-width:768px) {
+    z-index: 8;
+    left: 424px;
+  top: 160px;
+  }
+  @media screen and (min-width:1440px) {
+    left: 320px;
+  top: 688px;
+  }
 }
 .our-team__item:nth-child(5) &{
   left: 1040px;
   top: 638px;
+  @media screen and (min-width:768px) {
+    left: 544px;
+  top: 160px;
+    z-index: 10;
+  }
+  @media screen and (min-width:1440px) {
+    left: 1040px;
+  top: 688px;
+  }
 }
   }
 
@@ -98,6 +290,28 @@ font-style: normal;
 font-weight: 400;
 line-height: 32px;
 color: $text-color;
+display: none;
+@media screen and (min-width:768px) {
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+padding: 0px 14px 0px 14px;
+-webkit-line-clamp: 3;
+text-overflow: ellipsis;
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+order: 3;
+}
+@media screen and (min-width:1440px) {
+    font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+order: 1;
+display: block;
+}
   }
 
   &__button{
@@ -107,21 +321,102 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 22px;
-width: 240px;
+width: 308px;
 padding: 10px 16px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 16px;
 margin-bottom: 16px;
 display: block;
+order: 2;
+position: absolute;
+top: 40px;
+background-color: $button-color;
+color: $second-title-color;
+.our-team__item:nth-child(1) &{
+  left: 16px;
+  top: 345px;
+  z-index: 1;
+}
+.our-team__item:nth-child(2) &{
+  left: 16px;
+  top: 499px;
+  z-index: 3;
+}
+.our-team__item:nth-child(3) &{
+  left: 16px;
+  top: 652px;
+  z-index: 5;
+}
+.our-team__item:nth-child(4) &{
+  left: 16px;
+  top: 823px;
+  z-index: 7;
+}
+.our-team__item:nth-child(5) &{
+  left: 16px;
+  top: 993px;
+  z-index: 9;
+}
+
+@media screen and (min-width:768px) {
+order: 4;
+width: 200px;
+position: static;
+background-color: #ffffff;
+color: $button-color;
+}
+@media screen and (min-width:1440px) {
+  order: 3;
+  width: 240px;
+  position: static;
+}
   }
 
   &__name{
-    font-size: 18px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; 
+color: $name-color;
+text-align: left;
+order: 1;
+padding-top: 20px;
+padding-left: 16px;
+@media screen and (min-width:768px) {
+  order: 1;
+  text-align: center;
+  font-size: 16px;
 font-style: normal;
 font-weight: 700;
-line-height: 22px; 
-color: $name-color;
-text-align: center;
+line-height: 18px;
+padding-top: 0px;
+padding-left: 0px;
+  }
+  @media screen and (min-width:1440px) {
+    order: 5;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+&:last-of-type{
+  margin-top: 4px;
+  padding-top: 0px;
+  @media screen and (min-width:768px) {
+    color: $title-color;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+    }
+    @media screen and (min-width:1440px) {
+      color: $name-color;
+      margin-top: 0px;
+    }
+}
   }
 }
