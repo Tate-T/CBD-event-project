@@ -9,7 +9,7 @@ flex-shrink: 0;
     height: 626px;
     padding-top: 80px;
     padding-bottom: 48px;
-    background-image: url(././img/main/background_video-1x.png),
+    background-image: url(../img/main/background_video-1x.png),
     linear-gradient(#979797, #979797);
     background-position-x: right, center;
     background-position-y: center, center;
@@ -20,7 +20,7 @@ flex-shrink: 0;
     height: 798px;
     padding-bottom: 48px;
     padding-top: 108px;
-    background-image: url(././img/main/background_video-1x.png),
+    background-image: url(../img/main/background_video-1x.png),
     linear-gradient(#979797, #979797);
   background-position-x: right, center;
   background-position-y: center, center;
@@ -29,7 +29,7 @@ flex-shrink: 0;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(././img/main/background_video-2x.png),
+      background-image: url(../img/main/background_video-2x.png),
         linear-gradient(#979797, #979797);  }
     }
 
