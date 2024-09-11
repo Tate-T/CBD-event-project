@@ -7,14 +7,14 @@
     background-repeat: no-repeat;
     background-size:400px 600px;
     @media screen and (min-width: 768px) {
-        background-image: url(../../../img/tablet/service-background@tablet-1x.png);
+        background-image: url(./img/tablet/service-background@tablet-1x.png);
         background-size:400px 600px;
         background-position: 414px 0px;
         padding-top: 88px;
         padding-bottom: 48px;
     }
     @media screen and (min-width: 1440px) {
-        background-image: url(../../../img/desktop/choose-of-service-background@desktop-1x.png);
+        background-image: url(./img/desktop/choose-of-service-background@desktop-1x.png);
     background-size: 1360px 630px;
     background-position: 40px 192px;
     padding-top: 100px;
