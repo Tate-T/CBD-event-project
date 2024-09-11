@@ -24,7 +24,7 @@
     <title>CBD-main</title>
     <script type="module" crossorigin src="/CBD-event-project/assets/modulepreload-polyfill-3cfb730f.js"></script>
     <script type="module" crossorigin src="/CBD-event-project/assets/index-4ed993c7.js"></script>
-    <link rel="stylesheet" href="/CBD-event-project/assets/index-9d44abc3.css">
+    <link rel="stylesheet" href="/CBD-event-project/assets/index-c21b2fcc.css">
   </head>
 
   <body>
@@ -339,7 +339,10 @@
 
     <section class="topic">
   <div class="container">
-    <h2 class="topic__title-first">Тематичні події під ключ <h2 class="topic__title-second">незабутні святкові емоції</h2> </h2>
+    <h2 class="topic__title-first">
+      Тематичні події під ключ
+      <h2 class="topic__title-second">незабутні святкові емоції</h2>
+    </h2>
     <div class="topic__box">
       <div class="topic__first">
         <h3 class="topic__name">Використовуємо найсучасніший дизайн</h3>
@@ -360,18 +363,21 @@
       <picture>
         <source
           media="(min-width: 1200px)"
-          srcset="/CBD-event-project/assets/topics-img@desktop-1x-38873301.jpg 1x, /CBD-event-project/assets/topics-img@desktop-2x-7e6e7fc4.jpg 2x"
+          srcset="
+            ../img/desktop/topics-img@desktop-1x.jpg 1x,
+            ../img/desktop/topics-img@desktop-2x.jpg 2x
+          "
         />
         <source
-          media="(min-width: 1199px)"
+          media="(max-width: 767.99px)"
           srcset="
-            ././img/main/mobile/topic-img-mobile-1x.jpg 1x,
-            ././img/main/mobile/topic-img-mobile-2x.jpg 2x
+            ../img/main/mobile/topic-img-mobile-1x.jpg 1x,
+            ../img/main/mobile/topic-img-mobile-2x.jpg 2x
           "
         />
         <img
           class="topic__picture"
-          src="../../img/desktop/topics-img@desktop-1x.jpg"
+          src="/CBD-event-project/assets/topics-img@desktop-1x-38873301.jpg"
           alt=""
         />
       </picture>
