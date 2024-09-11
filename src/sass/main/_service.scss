@@ -2,7 +2,7 @@
   padding-top: 40px;
 height: 520px;
 flex-shrink: 0;
-background-image: url(././img/main/mobile/service-background.png),
+background-image: url(../img/main/mobile/service-background.png),
 linear-gradient(#979797, #979797);
 background-position: right, center;
 background-repeat: no-repeat, no-repeat;
@@ -10,7 +10,7 @@ background-size: 250px, auto;
 @media screen and (min-width: 768px) {
   padding-top: 80px;
   height: 802px;
-  background-image: url(././img/main/tablet-bcg-service-1x.png),
+  background-image: url(../img/main/tablet-bcg-service-1x.png),
         linear-gradient(#979797, #979797);
       background-position: center, center;
       background-repeat: no-repeat, no-repeat;
@@ -18,13 +18,13 @@ background-size: 250px, auto;
       @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(././img/main/tablet-bcg-service-2x.png),
+        background-image: url(../img/main/tablet-bcg-service-2x.png),
         linear-gradient(#979797, #979797);  }
 }
 @media screen and (min-width: 1200px) {
         padding-top: 108px;
         height: 574px;        
-      background-image: url(././img/main/service-background@desktop-1x.png),
+      background-image: url(../img/main/service-background@desktop-1x.png),
         linear-gradient(#979797, #979797);
       background-position: center, center;
       background-repeat: no-repeat, no-repeat;
@@ -32,7 +32,7 @@ background-size: 250px, auto;
       @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(././img/main/service-background@desktop-2x.png),
+        background-image: url(../img/main/service-background@desktop-2x.png),
         linear-gradient(#979797, #979797);  }
     }
 
