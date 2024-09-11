@@ -3,7 +3,7 @@
   position: relative;
 
   &__container {
-    background-image: url(./img/desktop/good-place-background@desktop-1x.png);
+    background-image: url(../img/desktop/good-place-background@desktop-1x.png);
     background-size: 240px 180px;
     background-repeat: no-repeat;
     background-position: 167px 80px;
@@ -12,7 +12,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(./img/desktop/good-place-background@desktop-2x.png);
+      background-image: url(../img/desktop/good-place-background@desktop-2x.png);
     }
     @media screen and (min-width: 768px) {
       background-image: none;
@@ -27,9 +27,9 @@
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(./img/desktop/good-place-background@desktop-2x.png);
+        background-image: url(../img/desktop/good-place-background@desktop-2x.png);
       }
-      background-image: url(./img/desktop/good-place-background@desktop-1x.png);
+      background-image: url(../img/desktop/good-place-background@desktop-1x.png);
     }
   }
 
