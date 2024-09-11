@@ -8,7 +8,7 @@ background:#979797;
 @media screen and (min-width: 768px) {
   padding-top:88px;
   padding-bottom: 60px;
-  background-image: url(../../img/main/tablet-bcg-prot-1x.png),
+  background-image: url(././img/main/tablet-bcg-prot-1x.png),
           linear-gradient(#979797, #979797);
           background-position-x: right, center;
           background-position-y: 75%, center;
@@ -16,13 +16,13 @@ background:#979797;
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../../img/main/tablet-bcg-prot-2x.png),
+    background-image: url(././img/main/tablet-bcg-prot-2x.png),
       linear-gradient(#979797, #979797);  }
 }
         @media screen and (min-width: 1200px) {
           padding-top: 108px;
           height: 775px;
-        background-image: url(../../img/main/main_background_protocol-1x.png),
+        background-image: url(././img/main/main_background_protocol-1x.png),
           linear-gradient(#979797, #979797);
         background-position-x: center, center;
         background-position-y: 75%, center;
@@ -31,7 +31,7 @@ background:#979797;
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-            background-image: url(../../img/main/main_background_protocol-2x.png),
+            background-image: url(././img/main/main_background_protocol-2x.png),
               linear-gradient(#979797, #979797);  }
         }
 
