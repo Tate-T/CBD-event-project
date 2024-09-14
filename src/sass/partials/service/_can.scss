@@ -1,16 +1,22 @@
 .can {
+
    
    @media screen and (min-width:768px) {
     padding-top: 88px;
     padding-bottom: 48px;
+    background:url(../img/desktop/good-place-background@desktop-1x.png) , linear-gradient(#979797, #979797);
+    background-repeat: no-repeat;
+    background-size:contain  ,100%;
    }
    @media screen and (min-width: 1200px) {
       padding-top: 100px;
   padding-bottom: 48px;
+
    }
    padding-top: 0px;
    padding-bottom: 0px;
-  background: var(--grey-fon, #979797);
+background:#979797 ;
+
 
   &__container {
    

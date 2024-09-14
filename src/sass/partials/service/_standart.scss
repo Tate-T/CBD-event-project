@@ -5,6 +5,7 @@
   padding: 48px 0 0;
 
   &__box {
+ 
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
@@ -117,11 +118,13 @@
   }
 
   &__prices {
+    background:url(../../../img/desktop/choose-of-service-background@desktop-2x.png) , linear-gradient(#979797, #979797);
+    background-repeat: no-repeat;
+    background-size:contain  ,100%;
     @media screen and (min-width: 1200px) {
        padding: 128px 0 200px;
      }
      padding: 80px 0 160px;
-    background: #979797;
   }
 
   &__boxe {
