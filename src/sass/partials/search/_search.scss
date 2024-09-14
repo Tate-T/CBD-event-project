@@ -14,33 +14,87 @@
     position: absolute;
     border-radius: 8px;
     z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: 70px;
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+    top: 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 300px;
+    height: 300px;
+    top: 0px;
+  }
   }
 
   &__phototwo {
     position: absolute;
     z-index: 3;
+    top: 230px;
+    left: 0px;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+  @media screen and (min-width: 768px) {
+    width: 250px;
+    height: 250px;
+    top: 160px;
+    left: 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 350px;
+    height: 350px;
     top: 160px;
     left: 201px;
-    border-radius: 8px;
+  }
   }
 
   &__phototree {
     position: absolute;
     z-index: 2;
-    top: 415px;
+    top: 400px;
+    left: 0px;
+    display: block;
+    width: 100px;
+      height: 100px;
+    @media screen and (min-width: 768px) {
+      width: 200px;
+      height:200px;
+      top: 415px;
+    left: 0px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 300px;
+      height: 300px;
+      top: 415px;
     left: 502px;
+    }
   }
 
   &__containerdata {
     position: absolute;
-    left: auto;
+    left: 0%;
     right: 40px;
     background-color: $second-title-color;
-    width: 440px;
+    width: 340px;
     height: 704px;
     display: flex;
-    gap: 95px;
+    gap: 15px;
     border-radius: 8px;
+    @media screen and (min-width: 768px) {
+      left: auto;
+    right: 40px;
+    gap: 95px;
+    width: 440px;
+    }
+    @media screen and (min-width: 1440px) {
+      left: auto;
+    right: 40px;
+    gap: 95px;
+    width: 440px;
+    }
   }
 
   &__listext {
@@ -56,8 +110,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
-    padding-left: 23px;
-    padding-top: 23px;
+    padding-left: 5px;
+    padding-top: 5px;
+    @media screen and (min-width: 768px) {
+      padding-left: 23px;
+      padding-top: 23px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-left: 23px;
+      padding-top: 23px;
+    }
   }
 
   &__date {
@@ -83,10 +145,23 @@
   &__list {
     display: flex;
     gap: 32px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1440px) {
+    }
   }
 
   &__containercalendar {
     position: relative;
+    padding-bottom: 300px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 300px;
+    }
+    @media screen and (min-width: 1440px) {
+     padding-bottom: 0px;
+    }
   }
 
   &__title {
@@ -139,7 +214,6 @@
     border-radius: 4px;
     border: none;
     border-bottom: 1px solid #3d3c39;
-    width: 240px;
     padding: 10px 16px;
   }
 
@@ -164,6 +238,7 @@
   &__table {
     border: 2px solid $text-color;
     border-radius: 6px;
+
   }
 
   &__minitext {
@@ -200,7 +275,26 @@
 
   &__bigcontainer {
     position: absolute;
-    left: 906px;
+    left: -30%;
+    top: 87%;
+
+    @media screen and (min-width: 768px) {
+      left: 20%;
+    top: 80%;
+    }
+    @media screen and (min-width: 1440px) {
+      left: 906px;
     top: 760px;
+    }
+  }
+
+  &__list &__iteam{
+    width: auto;
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 20%;
+    }
   }
 }
