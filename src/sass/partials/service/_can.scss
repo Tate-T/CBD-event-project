@@ -1,4 +1,9 @@
 .can {
+   
+   @media screen and (min-width:768px) {
+    padding-top: 88px;
+    padding-bottom: 48px;
+   }
    @media screen and (min-width: 1200px) {
       padding-top: 100px;
   padding-bottom: 48px;
@@ -8,6 +13,13 @@
   background: var(--grey-fon, #979797);
 
   &__container {
+   
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding: 0;
+   }
     @media screen and (min-width: 1200px) {
       display: flex;
     flex-direction: column;
@@ -24,7 +36,18 @@
   }
 
   &__title {
-    @media screen and (min-width:1200px) {
+   
+    @media screen and (min-width:768px) {
+      color: var(--white-fon, #F8F1E9);
+
+/* tablet/h2 */
+font-family: "Montserrat Alternates";
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 120% */
+    }
+     @media screen and (min-width:1200px) {
         color: var(--white-fon, #f8f1e9);
 
     /* h2 */
@@ -34,7 +57,6 @@
     font-weight: 500;
     line-height: 64px; /* 114.286% */
     }
-
     color: var(--white-fon, #F8F1E9);
 
     /* mobile/h2 */
@@ -46,6 +68,17 @@
   }
 
   &__text {
+
+    @media screen and (min-width:768px) {
+      color: var(--black-text, #3D3C39);
+      max-width: 511px;
+/* main text */
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+    }
     @media screen and (min-width:1200px) {
         color: var(--black-text, #3d3c39);
 
@@ -55,10 +88,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 160% */
-    width: 511px;
+    max-width: 511px;
     }
-
-
 
     color: var(--black-text, #3D3C39);
 
@@ -68,6 +99,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 150% */
-    width: 307px;
   }
 }
