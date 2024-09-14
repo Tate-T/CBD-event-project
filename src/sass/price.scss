@@ -7,3 +7,10 @@
 @import 'partials/price/hero';
 @import 'partials/price/price';
 @import 'partials/footer';
+
+.price-bacround {
+    background-image: linear-gradient(rgb(16, 16, 16, 0.8), rgb(16, 16, 16, 0.8)),
+      url(../img/bouquet.webp);
+      background-position: center, center;
+      background-repeat: no-repeat;
+  }
