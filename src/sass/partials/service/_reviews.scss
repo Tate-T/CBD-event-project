@@ -1,9 +1,11 @@
 .reviews {
+  background:url(../img/desktop/good-place-background@desktop-1x.png) , linear-gradient(#979797, #979797);
+  background-repeat: no-repeat;
+  background-size:contain  ,100%;
   @media screen and (min-width:1200px){
     padding: 108px 0 48px;
   }
   padding: 48px 0 48px;
-  background: #979797;
 
   &__title {
   
