@@ -20,7 +20,7 @@
     <title>CBD-price</title>
     <script type="module" crossorigin src="/CBD-event-project/assets/modulepreload-polyfill-3cfb730f.js"></script>
     <script type="module" crossorigin src="/CBD-event-project/assets/index-4ed993c7.js"></script>
-    <link rel="stylesheet" href="/CBD-event-project/assets/price-45b18433.css">
+    <link rel="stylesheet" href="/CBD-event-project/assets/price-6c4488f3.css">
   </head>
 
   <body>
@@ -79,8 +79,8 @@
           </li>
         </ul>
         <!-- <button class="header__menu-button"> -->
-          <svg class="header__icon-menu">
-            <use href="/CBD-event-project/assets/symbol-defs-089e9ec4.svg#icon-mobile-menu"></use>
+          <svg class="header__icon-menu" >
+            <use href="/CBD-event-project/assets/symbol-defs-089e9ec4.svg#icon-mobile-menu" data-menu-open></use>
           </svg>
         <!-- </button> -->
         <!-- <svg class="header__icon-menu">
@@ -99,26 +99,19 @@
             <a href="./portfolio.html" class="header__anchor">Портфоліо</a>
           </li>
           <li class="header__anchor-item">
-            <a href="" class="header__anchor">Клієнти</a>
-          </li>
-          <li class="header__anchor-item">
             <a href="./search.html" class="header__anchor">Магазин</a>
-          </li>
-          <li class="header__anchor-item">
-            <a href="" class="header__anchor">Контакти</a>
           </li>
           <li class="header__anchor-item">
             <a href="./price.html" class="header__anchor">Вартість</a>
           </li>
-          <li class="header__anchor-item">
-            <a href="" class="header__anchor">Події</a>
-          </li>
         </ul>
-        <label class="header__label">
+        <label class="header__label" >
           <input type="text" class="header__input" placeholder="Пошук" />
+          <a class="header__sumbit" href="./search.html">
           <svg class="header__input-svg">
             <use href="/CBD-event-project/assets/symbol-defs-089e9ec4.svg#icon-search-icon"></use>
           </svg>
+        </a>
         </label>
       </div>
     </div>
@@ -153,6 +146,34 @@
         </li>
       </ul>
     </div> -->
+    <div class="menu hidden" data-menu>
+      <ul class="menu__list">
+          <li class="menu__item">
+              <a href="./index.html" class="menu__link-specila">CBD</a>
+          </li>
+          <li class="menu__item">
+              <a href="./about.html" class="menu__link">Про нас</a>
+          </li>
+          <li class="menu__item">
+              <a href="./service.html" class="menu__link">Сервіси</a>
+          </li>
+          <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Магазин</a>
+        </li>
+        <li class="menu__item">
+            <a href="./footer.html" class="menu__link">Контакти</a>
+        </li>
+        <li class="menu__item">
+            <a href="./price.html" class="menu__link">Вартість</a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">Події</a>
+        </li>
+      </ul>
+  </div>
   </div>
 </section>
 
@@ -594,7 +615,7 @@
   </div>
 </section>
 
-    <section class="basement">
+    <section class="basement" id="footer">
   <div class="basement__container container">
     <div>
         <picture>
@@ -768,5 +789,6 @@
       
     
     
+    <script src="./js/menu.js"></script>
   </body>
 </html>
