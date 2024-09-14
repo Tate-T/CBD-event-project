@@ -1,20 +1,44 @@
 .price {
   padding-top: 108px;
   padding-bottom: 200px;
+  
 
   &__container {
     display: flex;
     gap: 135px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    @media screen and (max-width: 1363px) {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__rigtcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: start;
+    }
   }
 
   &__maintitle {
     color: $title-color;
     font-family: "Montserrat Alternates";
-    font-size: 56px;
+    font-size: 46px;
     font-style: normal;
     font-weight: 500;
     line-height: 64px;
     margin-bottom: 42px;
+    @media screen and (min-width: 768px) {
+      font-size: 56px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 56px;
+    }
   }
 
   &__information {
@@ -24,6 +48,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+    }
   }
 
   &__list {
@@ -42,11 +69,14 @@
   &__label {
     color: $footer-color;
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
     width: 326px;
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
   }
 
   &__input {
@@ -61,6 +91,7 @@
     border-radius: 4px;
     border: 1px solid #3d3c39;
     display: block;
+
   }
 
   &__priceinput {
@@ -216,19 +247,25 @@
   &__informationtext {
     color: $text-color;
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
   }
 
   &__accented {
     color: $logo-color;
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
   }
 
   &__button {
@@ -251,11 +288,14 @@
   &__textrequest {
     color: $name-color;
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
     margin-bottom: 72px;
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
   }
 
   &__image {
@@ -263,6 +303,7 @@
     height: auto;
     margin-bottom: 24px;
   }
+
 
   &__brochurebuton {
     width: 240px;
