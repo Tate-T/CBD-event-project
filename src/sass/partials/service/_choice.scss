@@ -103,6 +103,19 @@ background: var(--white-fon, #F8F1E9);
   &__button {
     width: 24px;
 height: 24px;
+background-color: transparent;
+  }
+
+  &__button:hover {
+    background: transparent;
+  }
+
+  &__icon{
+    width: 24px;
+height: 24px;
+    fill: var(--white-text, #FDFDFD);
+stroke-width: 1px;
+stroke: var(--yellow-80, #A76E00);
   }
 
   &__panel{
@@ -170,5 +183,7 @@ line-height: 18px; /* 128.571% */
   &__iteme{
     margin-bottom: 8px;
   }
+
+
   }
   

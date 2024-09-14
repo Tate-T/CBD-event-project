@@ -34,5 +34,8 @@
 <symbol id="icon-mobile-menu" viewBox="0 0 32 32">
 <path d="M0 2h32v4h-32zM0 8h32v4h-32zM0 14h32v4h-32zM0 20h32v4h-32zM0 26h32v4h-32z"></path>
 </symbol>
+<symbol id="icon-polygon" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" d="M30.089 2.331l-14.089 28.179-14.089-28.179 14.089 10.958 14.089-10.958z"></path>
+</symbol>
 </defs>
 </svg>
