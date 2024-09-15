@@ -8,6 +8,10 @@
 
   &__listphoto {
     position: relative;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   &__photofirst {
@@ -20,12 +24,10 @@
   @media screen and (min-width: 768px) {
     width: 200px;
     height: 200px;
-    top: 0px;
   }
-  @media screen and (min-width: 1440px) {
-    width: 300px;
-    height: 300px;
-    top: 0px;
+  @media screen and (min-width: 1200px) {
+    width: 283px;
+      height: 230px;
   }
   }
 
@@ -37,17 +39,17 @@
     border-radius: 8px;
     width: 100px;
     height: 100px;
+
   @media screen and (min-width: 768px) {
     width: 250px;
     height: 250px;
     top: 160px;
-    left: 0px;
+    left: 120px;
   }
-  @media screen and (min-width: 1440px) {
-    width: 350px;
-    height: 350px;
-    top: 160px;
-    left: 201px;
+  @media screen and (min-width: 1200px) {
+    width: 383px;
+height: 310px;
+    top: 160px;    
   }
   }
 
@@ -63,11 +65,10 @@
       width: 200px;
       height:200px;
       top: 415px;
-    left: 0px;
     }
-    @media screen and (min-width: 1440px) {
-      width: 300px;
-      height: 300px;
+    @media screen and (min-width: 1200px) {
+      width: 283px;
+      height: 230px;
       top: 415px;
     left: 502px;
     }
@@ -172,6 +173,9 @@
     line-height: 36px;
     margin-bottom: 32px;
     max-width: 250px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__bigtitle {
@@ -201,6 +205,9 @@
     line-height: 32px;
     max-width: 240px;
     margin-bottom: 16px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__button {
@@ -223,6 +230,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+      margin-top: 30px;
+    }
   }
 
   &__titlecalendar {
@@ -277,14 +288,26 @@
     position: absolute;
     left: -30%;
     top: 87%;
-
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     @media screen and (min-width: 768px) {
       left: 20%;
     top: 80%;
     }
-    @media screen and (min-width: 1440px) {
-      left: 906px;
-    top: 760px;
+    @media screen and (min-width: 1200px) {
+      left: 706px;
+    top: 1100px;
+    }
+  }
+
+  &__iteam {
+    @media screen and (max-width: 768px) {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
     }
   }
 
