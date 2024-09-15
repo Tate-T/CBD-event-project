@@ -1,2 +1,2 @@
 import "./js/menu.js"
-import "./service.js"
+import "./js/service.js"
