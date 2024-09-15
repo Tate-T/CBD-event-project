@@ -1,5 +1,5 @@
 .standart {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding: 100px 0 0;
   }
   padding: 48px 0 0;
@@ -12,7 +12,7 @@
       align-items: end;
       gap: 8px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       padding-bottom: 98px;
 
       align-items: start;
@@ -26,7 +26,7 @@
       width: 704px;
       gap: 24px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       max-width: 1360px;
       width: 100%;
       align-items: end;
@@ -42,8 +42,9 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+      align-items: center;
     }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       gap: 16px;
       flex-direction: row;
     }
@@ -61,7 +62,7 @@
       font-weight: 500;
       line-height: 48px; /* 120% */
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       width: 715px;
       color: var(--gold-text, #a76e00);
 
@@ -94,7 +95,7 @@
       font-weight: 400;
       line-height: 18px; /* 128.571% */
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       width: 784px;
       color: var(--black-text, #3d3c39);
 
@@ -118,17 +119,17 @@
   }
 
   &__prices {
-    background:url(../../../img/desktop/choose-of-service-background@desktop-2x.png) , linear-gradient(#979797, #979797);
+    background:url(../img/desktop/choose-of-service-background@desktop-2x.png) , linear-gradient(#979797, #979797);
     background-repeat: no-repeat;
     background-size:contain  ,100%;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
        padding: 128px 0 200px;
      }
      padding: 80px 0 160px;
   }
 
   &__boxe {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       height: 600px;
       display: flex;
       width: 328px;
@@ -153,7 +154,7 @@
   }
 
   &__boxe:nth-child(2) {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       margin-top: 100px;
       margin-left: 0px;
      }
@@ -161,7 +162,7 @@
   }
 
   &__boxe:nth-child(4) {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       margin-top: 100px;
       margin-left: 0px;
      }
@@ -180,7 +181,7 @@
       line-height: 48px; /* 120% */
       margin-bottom: 16px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       margin-bottom: 24px;
       color: var(--green-footer, #16392d);
 
@@ -212,7 +213,7 @@
       font-weight: 500;
       line-height: 32px; /* 133.333% */
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       margin-bottom: 20px;
       color: var(--gold-text, #a76e00);
       height: 36px;
@@ -250,7 +251,7 @@
       line-height: 32px; /* 133.333% */
       margin-bottom: 20px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       margin-bottom: 24px;
       color: var(--gold-logo, #da9d27);
 
@@ -285,7 +286,7 @@
       flex-direction: column;
       gap: 16px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       color: var(--black-text, #3d3c39);
 
       /* main text */
@@ -330,7 +331,7 @@
       font-weight: 700;
       line-height: 18px; /* 112.5% */
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       margin-top: auto;
       display: flex;
       width: 200px;
@@ -435,7 +436,7 @@
   }
 
   &__div {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
      flex-direction: column;
      gap: 0;
     }

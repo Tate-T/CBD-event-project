@@ -64,7 +64,6 @@ line-height: 48px; /* 120% */
  @media screen and (min-width:1200px){
       padding-bottom: 0px;
       max-width: 1360px;
-    height: 448px;
     gap: 138px;
     margin-bottom: 23px;
         flex-direction: row;
@@ -112,7 +111,7 @@ width: 324px;
      @media screen and (min-width:1200px){
       margin-bottom: 23px;
       max-width: 668px;
-    width: 668px;
+    width: 100%;
     color: var(--black-text, #3d3c39);
     
 
@@ -157,7 +156,7 @@ width: 324px;
      @media screen and (min-width:1200px){
       display: flex;
       margin-bottom: 23px;
-    width: 668px;
+    width: 100%;
     color: var(--black-text, #3d3c39);
 
     /* main text */
